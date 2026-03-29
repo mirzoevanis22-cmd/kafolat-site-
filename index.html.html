@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Кафолат Сервис — Лучший сервис Таджикистана · 1144</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --teal: #2BBFB0;
+    --teal-deep: #168F82;
+    --teal-light: #5FD6C8;
+    --teal-pale: #CFEDEA;
+    --orange: #F5A623;
+    --orange-bright: #FFB84D;
+    --orange-dark: #D4881C;
+    --dark: #0D1B1E;
+    --dark2: #11282B;
+    --dark3: #1A2D30;
+    --dark-deep: #071012;
+    --text: #FFFFFF;
+    --muted: #A0B3B6;
+    --muted2: #6B7C80;
+    --border: rgba(43,191,176,0.18);
+    --card: #1A2A2D;
+  }
+
+  /* ══ НОЧНОЙ РЕЖИМ — как в брендбуке ══ */
+  body.night-mode {
+    --dark: #090E10;
+    --dark2: #0D1518;
+    --dark3: #121C1F;
+    --dark-deep: #050A0B;
+    --text: #F0F4F3;
+    --muted: #7A9EA0;
+    --muted2: #4A6A6D;
+    --border: rgba(43,191,176,0.12);
+    --card: #0F1A1D;
+  }
+  body.night-mode header { background: rgba(9,14,16,0.97) !important; border-bottom: 1px solid rgba(43,191,176,0.1) !important; }
+  body.night-mode .hero-bg { background: radial-gradient(ellipse 60% 50% at 70% 40%, rgba(43,191,176,0.06) 0%, transparent 70%), radial-gradient(ellipse 40% 40% at 20% 80%, rgba(245,166,35,0.04) 0%, transparent 60%); }
+  body.night-mode .service-card { background: #0F1A1D; border-color: rgba(43,191,176,0.1); }
+  body.night-mode .work-card { background: #0F1A1D; }
+  body.night-mode .review-card { background: #0F1A1D; }
+  body.night-mode .product-card { background: #0F1A1D; border-color: rgba(43,191,176,0.1); }
+  body.night-mode footer { background: #050A0B; }
+  body.night-mode .mobile-search { background: #0D1518; border-color: rgba(43,191,176,0.1); }
+  body.night-mode .mobile-search input { background: #121C1F; }
+  body.night-mode .bottom-nav { background: rgba(9,14,16,0.98) !important; border-top: 1px solid rgba(43,191,176,0.1) !important; }
+  body.night-mode .theme-toggle { background: #121C1F; border-color: rgba(43,191,176,0.2); }
+  body.night-mode .theme-toggle-ball { background: #2BBFB0; }
+  body.light-mode {
+    --dark: #F4F7F6;
+    --dark2: #FFFFFF;
+    --dark3: #EAF2F0;
+    --text: #0D1B1E;
+    --muted: #5A8078;
+    --muted2: #8AADA7;
+    --border: rgba(43,191,176,0.2);
+    --card: #FFFFFF;
+  }
+  body.light-mode body { background: #F4F7F6; }
+  body.light-mode header {
+    background: rgba(255,255,255,0.97) !important;
+    border-bottom: 1px solid rgba(43,191,176,0.15) !important;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+  }
+  body.light-mode .logo-name {
+    background: linear-gradient(90deg, #168F82, #D4881C);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  body.light-mode .logo-sub .hotline-num { color: #F5A623; }
+  body.light-mode .logo-sub .hotline-label { color: #8AADA7; }
+  body.light-mode nav a { color: #5A8078; }
+  body.light-mode nav a:hover { color: #2BBFB0; background: rgba(43,191,176,0.08); }
+  body.light-mode .hero { background: linear-gradient(160deg, #EAF6F4 0%, #F4F7F6 60%); }
+  body.light-mode .hero-bg { background: radial-gradient(ellipse 70% 60% at 70% 40%, rgba(43,191,176,0.12) 0%, transparent 70%); }
+  body.light-mode .hero-grid { opacity: 0.06; filter: invert(1); }
+  body.light-mode .hero-badge { background: rgba(43,191,176,0.1); border-color: rgba(43,191,176,0.3); color: #168F82; }
+  body.light-mode .slide-num { background: linear-gradient(135deg,#2BBFB0,#F5A623); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+  body.light-mode .slide-tag { color: #168F82; }
+  body.light-mode .slide-title { color: #0D1B1E; }
+  body.light-mode .slide-sub { color: #5A8078; }
+  body.light-mode .hero-progress { border-top-color: rgba(43,191,176,0.2); }
+  body.light-mode .progress-dot { background: rgba(43,191,176,0.2); }
+  body.light-mode .progress-dot.active { background: #2BBFB0; }
+  body.light-mode .stat-num { background: linear-gradient(135deg,#2BBFB0,#F5A623); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+  body.light-mode .stat-label { color: #8AADA7; }
+  body.light-mode .btn-secondary { background: #fff; border-color: rgba(43,191,176,0.3); color: #0D1B1E; }
+  body.light-mode .btn-secondary:hover { border-color: #2BBFB0; color: #2BBFB0; background: rgba(43,191,176,0.06); }
+  body.light-mode #services { background: #FFFFFF; }
+  /* Цветные карточки услуг в светлой теме */
+  body.light-mode .service-card:nth-child(1) {
+    background: linear-gradient(145deg, #E8F8F6 0%, #D4F2EE 100%);
+    border: 1px solid rgba(43,191,176,0.25);
+  }
+  body.light-mode .service-card:nth-child(1) .service-icon {
+    background: rgba(43,191,176,0.2); border-color: rgba(43,191,176,0.4);
+  }
+  body.light-mode .service-card:nth-child(1) h3 { color: #0F6E56; }
+  body.light-mode .service-card:nth-child(1) .service-price { color: #168F82; border-top-color: rgba(43,191,176,0.2); }
+  body.light-mode .service-card:nth-child(1):hover { box-shadow: 0 12px 40px rgba(43,191,176,0.2); border-color: #2BBFB0; }
+
+  body.light-mode .service-card:nth-child(2) {
+    background: linear-gradient(145deg, #FEF4E6 0%, #FDE8C4 100%);
+    border: 1px solid rgba(245,166,35,0.25);
+  }
+  body.light-mode .service-card:nth-child(2) .service-icon {
+    background: rgba(245,166,35,0.2) !important; border-color: rgba(245,166,35,0.4) !important;
+  }
+  body.light-mode .service-card:nth-child(2) h3 { color: #A05F00; }
+  body.light-mode .service-card:nth-child(2) p { color: #8B6A30; }
+  body.light-mode .service-card:nth-child(2) li { color: #7A5C20; }
+  body.light-mode .service-card:nth-child(2) .service-price { color: #D4881C !important; border-top-color: rgba(245,166,35,0.2); }
+  body.light-mode .service-card:nth-child(2):hover { box-shadow: 0 12px 40px rgba(245,166,35,0.2); border-color: #F5A623; }
+
+  body.light-mode .service-card:nth-child(3) {
+    background: linear-gradient(145deg, #EAF0FB 0%, #D4E2F8 100%);
+    border: 1px solid rgba(60,137,232,0.25);
+  }
+  body.light-mode .service-card:nth-child(3) .service-icon {
+    background: rgba(60,137,232,0.15) !important; border-color: rgba(60,137,232,0.3) !important;
+  }
+  body.light-mode .service-card:nth-child(3) h3 { color: #1A4FA0; }
+  body.light-mode .service-card:nth-child(3) p { color: #3A5F8A; }
+  body.light-mode .service-card:nth-child(3) li { color: #3A5F8A; }
+  body.light-mode .service-card:nth-child(3) .service-price { color: #3C89E8; border-top-color: rgba(60,137,232,0.2); }
+  body.light-mode .service-card:nth-child(3):hover { box-shadow: 0 12px 40px rgba(60,137,232,0.15); border-color: #3C89E8; }
+  body.light-mode #catalog { background: #F4F7F6; }
+  body.light-mode .section-tag { color: #168F82; }
+  body.light-mode .section-title { color: #0D1B1E; }
+  body.light-mode .section-desc { color: #5A8078; }
+  body.light-mode .filter-btn { color: #5A8078; border-color: rgba(43,191,176,0.25); background: #fff; }
+  body.light-mode .filter-btn.active { background: rgba(43,191,176,0.1); border-color: #2BBFB0; color: #168F82; }
+  body.light-mode .product-card { background: #fff; border-color: rgba(43,191,176,0.12); box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+  body.light-mode .product-card:hover { border-color: #2BBFB0; box-shadow: 0 8px 32px rgba(43,191,176,0.15); }
+  body.light-mode .product-cat { color: #2BBFB0; }
+  body.light-mode .product-name { color: #0D1B1E; }
+  body.light-mode .product-desc { color: #8AADA7; }
+  body.light-mode .product-price { color: #F5A623; }
+  body.light-mode .review-card { background: #fff; border-color: rgba(43,191,176,0.12); box-shadow: 0 2px 12px rgba(0,0,0,0.04); }
+  body.light-mode .work-card { background: #fff; border-color: rgba(43,191,176,0.12); }
+  body.light-mode footer { background: #0D1B1E; color: #e8f0ee; }
+  body.light-mode footer p { color: #7ca99a; }
+  body.light-mode .mobile-search { background: #fff; border-bottom: 1px solid rgba(43,191,176,0.15); }
+  body.light-mode .mobile-search input { background: #F4F7F6; color: #0D1B1E; border-color: rgba(43,191,176,0.2); }
+  body.light-mode .mobile-search input::placeholder { color: #8AADA7; }
+  body.light-mode .bottom-nav { background: rgba(255,255,255,0.97) !important; border-top: 1px solid rgba(43,191,176,0.15) !important; box-shadow: 0 -4px 20px rgba(0,0,0,0.06); }
+  body.light-mode .bn-item { color: #8AADA7; }
+  body.light-mode .bn-item.active { color: #2BBFB0; }
+  body.light-mode .bn-center-btn { color: #2BBFB0; }
+  body.light-mode .theme-toggle { background: #2BBFB0; border-color: #2BBFB0; }
+  body.light-mode .theme-toggle-ball { transform: translateX(20px); background: #fff; }
+
+  /* Тумблер — тёмная тема по умолчанию */
+  .theme-toggle {
+    width: 46px; height: 26px; border-radius: 13px;
+    background: var(--dark3); border: 1px solid var(--border);
+    cursor: pointer; flex-shrink: 0; display: flex; align-items: center; padding: 3px;
+    transition: all 0.3s;
+  }
+  .theme-toggle-ball {
+    width: 20px; height: 20px; border-radius: 50%;
+    background: var(--teal);
+    transition: transform 0.3s; display: flex; align-items: center;
+    justify-content: center; font-size: 11px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Manrope', sans-serif; background: var(--dark); color: var(--text); overflow-x: hidden; }
+
+  header {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(10,31,31,0.92); backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 24px; height: 68px;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 0;
+  }
+  .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+  .logo-icon { width: 44px; height: 44px; border-radius: 50%; overflow: hidden; flex-shrink: 0; }
+  .logo-icon img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+  .logo-text { display: flex; flex-direction: column; gap: 3px; }
+  .logo-name {
+    font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 17px;
+    background: linear-gradient(90deg, var(--teal), var(--orange));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: 1px;
+    white-space: nowrap;
+  }
+  .logo-sub { display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+  .logo-sub .phone-icon {
+    width: 16px; height: 16px; background: var(--teal); border-radius: 3px;
+    display: inline-flex; align-items: center; justify-content: center; font-size: 10px; flex-shrink: 0;
+  }
+  .logo-sub .hotline-num {
+    font-family: 'Montserrat', sans-serif; font-weight: 800;
+    font-size: 15px; color: #F5A623; letter-spacing: 3px;
+  }
+  .logo-sub .hotline-label { font-size: 11px; color: var(--muted); letter-spacing: 0.3px; }
+  nav { display: flex; gap: 8px; align-items: center; flex: 1; justify-content: center; margin: 0 40px; }
+  .btn-call-wrap { flex-shrink: 0; }
+  nav a {
+    color: var(--muted); text-decoration: none;
+    font-family: 'Montserrat', sans-serif; font-size: 13px;
+    padding: 6px 14px; border-radius: 6px; transition: all 0.2s; letter-spacing: 0.5px;
+  }
+  nav a:hover { color: var(--teal); background: rgba(43,191,176,0.1); }
+  .btn-call {
+    background: linear-gradient(135deg, #2BBFB0, #168F82) !important;
+    color: #fff !important; padding: 10px 22px !important; border-radius: 10px !important;
+    font-weight: 700 !important; font-size: 12px !important; letter-spacing: 1px;
+    text-decoration: none; white-space: nowrap; flex-shrink: 0;
+    box-shadow: 0 4px 20px rgba(43,191,176,0.4), 0 0 40px rgba(43,191,176,0.1);
+    transition: all 0.25s; font-family: 'Montserrat', sans-serif; text-transform: uppercase;
+  }
+  .btn-call:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(43,191,176,0.55), 0 0 60px rgba(43,191,176,0.15) !important; }
+
+  .hero {
+    min-height: 100vh; display: flex; align-items: center;
+    padding: 100px 40px 60px; position: relative; overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 60% 60% at 70% 40%, rgba(43,191,176,0.12) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 50% at 30% 70%, rgba(245,166,35,0.08) 0%, transparent 60%);
+  }
+  .hero-grid {
+    position: absolute; inset: 0; opacity: 0.04;
+    background-image: linear-gradient(var(--teal) 1px, transparent 1px), linear-gradient(90deg, var(--teal) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+  .hero-content { position: relative; max-width: 620px; }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(43,191,176,0.12); border: 1px solid rgba(43,191,176,0.3);
+    padding: 6px 16px; border-radius: 20px; font-size: 12px; color: var(--teal);
+    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 28px;
+    animation: fadeUp 0.6s ease both;
+  }
+  .hero-badge::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--teal); animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(1.3)} }
+  @keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+  .hero h1 {
+    font-family: 'Montserrat', sans-serif; font-size: clamp(36px,5vw,62px); font-weight: 800;
+    line-height: 1.1; letter-spacing: -1px; margin-bottom: 20px;
+  }
+  .hero h1 span { background: linear-gradient(135deg, var(--teal), var(--orange)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero-desc { font-size: 17px; color: var(--muted); line-height: 1.7; margin-bottom: 36px; }
+  .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+
+  .hero-slide { display: none; flex-direction: column; justify-content: center; }
+  .hero-slide.active { display: flex; animation: slideIn 0.7s cubic-bezier(0.4,0,0.2,1) both; }
+  @keyframes slideIn { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+
+  .slide-num {
+    font-family: 'Montserrat', sans-serif; font-size: clamp(52px,14vw,100px);
+    font-weight: 900; letter-spacing: -2px; line-height: 1;
+    background: linear-gradient(135deg, var(--teal), var(--orange));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    margin-bottom: 8px;
+  }
+  .slide-title {
+    font-family: 'Montserrat', sans-serif; font-size: clamp(20px,5vw,38px);
+    font-weight: 800; line-height: 1.2; letter-spacing: -0.3px;
+    margin-bottom: 10px; color: var(--text);
+  }
+  .slide-title span { background: linear-gradient(135deg, var(--teal), var(--orange)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .slide-sub {
+    font-size: clamp(13px,3.5vw,16px); color: var(--muted); line-height: 1.6;
+    max-width: 540px; margin-bottom: 16px;
+  }
+  .slide-tag {
+    font-size: 10px; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--teal);
+    margin-bottom: 8px; font-family: 'Montserrat', sans-serif;
+  }
+
+  /* ══ НИЖНЯЯ НАВИГАЦИЯ ══ */
+  .bottom-nav {
+    display: none;
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 200;
+    background: rgba(13,27,30,0.97);
+    border-top: 1px solid rgba(43,191,176,0.2);
+    padding: 6px 0 calc(6px + env(safe-area-inset-bottom));
+    backdrop-filter: blur(16px);
+  }
+  .bottom-nav-inner {
+    display: flex; justify-content: space-around; align-items: flex-end;
+  }
+  .bn-item {
+    display: flex; flex-direction: column; align-items: center; gap: 3px;
+    padding: 4px 8px; cursor: pointer; text-decoration: none;
+    transition: all 0.2s; flex: 1;
+    color: var(--muted);
+  }
+  .bn-svg { width: 24px; height: 24px; transition: all 0.2s; }
+  .bn-label {
+    font-size: 9px; font-weight: 700; letter-spacing: 0.5px;
+    color: inherit; font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase; transition: color 0.2s;
+  }
+  .bn-item.active { color: var(--teal); }
+  .bn-item:not(.active) { opacity: 0.5; }
+  .bn-center-btn {
+    display: flex; flex-direction: column; align-items: center; gap: 3px;
+    flex: 1; cursor: pointer; text-decoration: none; color: var(--teal);
+    padding: 0 8px;
+  }
+  .bn-center-circle {
+    width: 50px; height: 50px; border-radius: 50%;
+    background: linear-gradient(135deg, #2BBFB0, #168F82);
+    display: flex; align-items: center; justify-content: center;
+    margin-top: -20px;
+    box-shadow: 0 4px 20px rgba(43,191,176,0.5);
+  }
+  .bn-center-circle svg { width: 24px; height: 24px; }
+  .bn-badge {
+    position: absolute; top: -4px; right: 2px;
+    background: var(--orange); color: #0D1B1E;
+    font-size: 8px; font-weight: 800; min-width: 16px; height: 16px;
+    border-radius: 8px; padding: 0 4px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .bn-icon-wrap { position: relative; display: inline-flex; }
+  @media (max-width: 768px) {
+    .bottom-nav { display: block !important; }
+    body { padding-bottom: 72px; }
+  }
+
+  .hero-progress {
+    display: flex; gap: 6px; margin-top: 40px;
+    padding-top: 32px; border-top: 1px solid var(--border);
+  }
+  .progress-dot {
+    height: 3px; border-radius: 2px; background: var(--border);
+    transition: all 0.4s; cursor: pointer; flex: 1; overflow: hidden; position: relative;
+  }
+  .progress-dot.active { background: var(--border); box-shadow: none; }
+  .progress-dot.active::after {
+    content: ''; position: absolute; left: 0; top: 0; height: 100%;
+    background: var(--teal); box-shadow: 0 0 8px rgba(43,191,176,0.6);
+    animation: progressFill 2s linear forwards;
+    border-radius: 2px;
+  }
+  @keyframes progressFill { from { width: 0%; } to { width: 100%; } }
+  .btn-primary {
+    background: linear-gradient(135deg, #2BBFB0, #168F82); color: #fff;
+    padding: 14px 32px; border-radius: 10px; font-family: 'Montserrat', sans-serif;
+    font-weight: 700; font-size: 13px; text-decoration: none; letter-spacing: 1px;
+    border: none; cursor: pointer;
+    box-shadow: 0 8px 32px rgba(43,191,176,0.4), 0 0 60px rgba(43,191,176,0.1);
+    transition: all 0.25s; display: inline-flex; align-items: center; gap: 8px;
+    text-transform: uppercase;
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 48px rgba(43,191,176,0.55), 0 0 80px rgba(43,191,176,0.15); }
+  .btn-secondary {
+    background: transparent; color: var(--text); padding: 14px 32px; border-radius: 10px;
+    font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 14px;
+    text-decoration: none; letter-spacing: 0.5px; border: 1px solid var(--border);
+    cursor: pointer; transition: all 0.2s; display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-secondary:hover { border-color: var(--teal); color: var(--teal); background: rgba(43,191,176,0.06); }
+  .hero-stats {
+    display: flex; gap: 40px; margin-top: 52px; animation: fadeUp 0.6s 0.4s ease both;
+    padding-top: 36px; border-top: 1px solid var(--border);
+  }
+  .stat-num { font-family: 'Montserrat', sans-serif; font-size: 32px; font-weight: 800; background: linear-gradient(135deg, var(--teal), var(--orange)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .stat-label { font-size: 12px; color: var(--muted); letter-spacing: 0.5px; }
+
+  section { padding: 80px 40px; }
+  .section-tag { font-size: 11px; letter-spacing: 3px; color: var(--teal); text-transform: uppercase; font-family: 'Montserrat', sans-serif; font-weight: 600; margin-bottom: 12px; }
+  .section-title { font-family: 'Montserrat', sans-serif; font-size: clamp(26px,3vw,38px); font-weight: 800; letter-spacing: -0.5px; margin-bottom: 16px; }
+  .section-desc { color: var(--muted); font-size: 16px; line-height: 1.7; max-width: 560px; }
+  .section-header { margin-bottom: 52px; }
+
+  #services { background: var(--dark2); }
+  .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+  .service-card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 28px;
+    transition: all 0.3s; position: relative; overflow: hidden;
+  }
+  .service-card:hover { transform: translateY(-6px); }
+
+  /* Бирюзовая карточка — Сантехника */
+  .sc-teal { border-color: rgba(43,191,176,0.3); background: linear-gradient(145deg, var(--card) 60%, rgba(43,191,176,0.05)); }
+  .sc-teal:hover { border-color: #2BBFB0; box-shadow: 0 16px 48px rgba(43,191,176,0.18); }
+  .sc-teal .service-accent { background: linear-gradient(90deg,#2BBFB0,#168F82); }
+  .sc-teal .service-icon { background: rgba(43,191,176,0.15); border-color: rgba(43,191,176,0.3); }
+  .sc-teal .service-tag { color: #2BBFB0; background: rgba(43,191,176,0.12); }
+  .sc-teal .service-price { color: #2BBFB0; border-top-color: rgba(43,191,176,0.2); }
+  .sc-teal .service-list li::before { background: #2BBFB0; }
+
+  /* Оранжевая карточка — Электрика */
+  .sc-orange { border-color: rgba(245,166,35,0.3); background: linear-gradient(145deg, var(--card) 60%, rgba(245,166,35,0.04)); }
+  .sc-orange:hover { border-color: #F5A623; box-shadow: 0 16px 48px rgba(245,166,35,0.18); }
+  .sc-orange .service-accent { background: linear-gradient(90deg,#F5A623,#D4881C); }
+  .sc-orange .service-icon { background: rgba(245,166,35,0.15); border-color: rgba(245,166,35,0.3); }
+  .sc-orange .service-tag { color: #F5A623; background: rgba(245,166,35,0.12); }
+  .sc-orange .service-price { color: #F5A623; border-top-color: rgba(245,166,35,0.2); }
+  .sc-orange .service-list li::before { background: #F5A623; }
+
+  /* Синяя карточка — Под ключ */
+  .sc-blue { border-color: rgba(60,137,232,0.3); background: linear-gradient(145deg, var(--card) 60%, rgba(60,137,232,0.04)); }
+  .sc-blue:hover { border-color: #3C89E8; box-shadow: 0 16px 48px rgba(60,137,232,0.18); }
+  .sc-blue .service-accent { background: linear-gradient(90deg,#3C89E8,#1A6BC8); }
+  .sc-blue .service-icon { background: rgba(60,137,232,0.15); border-color: rgba(60,137,232,0.3); }
+  .sc-blue .service-tag { color: #3C89E8; background: rgba(60,137,232,0.12); }
+  .sc-blue .service-price { color: #3C89E8; border-top-color: rgba(60,137,232,0.2); }
+  .sc-blue .service-list li::before { background: #3C89E8; }
+
+  .service-accent { height: 3px; border-radius: 3px; width: 40px; margin-bottom: 20px; }
+  .service-icon { width: 54px; height: 54px; border-radius: 14px; border: 1px solid; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; font-size: 26px; }
+  .service-tag { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 3px 10px; border-radius: 20px; margin-bottom: 12px; font-family: 'Montserrat', sans-serif; }
+  .service-card h3 { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 20px; margin-bottom: 8px; }
+  .service-card p { color: var(--muted); font-size: 14px; line-height: 1.6; margin-bottom: 18px; }
+  .service-list { list-style: none; margin-bottom: 20px; display: flex; flex-direction: column; gap: 7px; }
+  .service-list li { font-size: 13px; color: var(--muted); padding-left: 14px; position: relative; line-height: 1.4; }
+  .service-list li::before { content: ''; position: absolute; left: 0; top: 6px; width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
+  .service-price { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 13px; padding-top: 16px; border-top: 1px solid; letter-spacing: 0.3px; }
+
+  #catalog { background: var(--dark); }
+  .catalog-filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; }
+  .filter-btn { padding: 7px 16px; border-radius: 100px; border: 1px solid var(--border); background: transparent; color: var(--muted); font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+  .filter-btn.active, .filter-btn:hover { background: rgba(43,191,176,0.12); border-color: var(--teal); color: var(--teal); }
+  .catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  @media (min-width: 600px) { .catalog-grid { grid-template-columns: repeat(3, 1fr); gap: 16px; } }
+  @media (min-width: 900px) { .catalog-grid { grid-template-columns: repeat(4, 1fr); gap: 20px; } }
+  .product-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; transition: all 0.3s; display: flex; flex-direction: column; cursor: pointer; }
+  .product-card:hover { transform: translateY(-4px); border-color: var(--teal); box-shadow: 0 8px 32px rgba(43,191,176,0.2); }
+  .product-img {
+    width: 100%; aspect-ratio: 1/1;
+    background: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 48px; position: relative; overflow: hidden; flex-shrink: 0;
+  }
+  .product-img img { width: 100%; height: 100%; object-fit: contain; padding: 8px; background: #fff; }
+  .product-badge { position: absolute; top: 8px; left: 8px; background: var(--teal); color: #fff; font-size: 10px; padding: 2px 8px; border-radius: 4px; font-weight: 700; font-family: 'Montserrat', sans-serif; }
+  .product-info { padding: 10px 12px 12px; display: flex; flex-direction: column; flex: 1; }
+  .product-cat { font-size: 9px; color: var(--teal); letter-spacing: 1px; text-transform: uppercase; font-weight: 700; margin-bottom: 4px; }
+  .product-name { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 12px; margin-bottom: 4px; line-height: 1.3; flex: 1; }
+  .product-desc { font-size: 11px; color: var(--muted); margin-bottom: 10px; line-height: 1.4; display: none; }
+  @media (min-width: 600px) { .product-desc { display: block; } }
+  .product-footer { display: flex; justify-content: space-between; align-items: center; margin-top: auto; }
+  .product-price { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 14px; color: var(--orange); }
+  .btn-cart { background: var(--teal); border: none; color: #fff; width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 18px; font-weight: 700; transition: all 0.2s; flex-shrink: 0; box-shadow: 0 2px 12px rgba(43,191,176,0.4); }
+  .btn-cart:hover { background: var(--teal-light); transform: scale(1.1); box-shadow: 0 4px 20px rgba(43,191,176,0.6); }
+
+  #works { background: var(--dark2); }
+  .works-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+  .work-card { border-radius: 14px; overflow: hidden; border: 1px solid var(--border); background: var(--dark3); transition: all 0.3s; position: relative; }
+  .work-card:hover { transform: scale(1.02); border-color: rgba(93,202,165,0.3); }
+  .work-img { height: 200px; display: flex; align-items: center; justify-content: center; font-size: 60px; background: linear-gradient(135deg, var(--dark3), var(--dark2)); position: relative; overflow: hidden; }
+  .work-img::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 40%, rgba(10,31,31,0.95)); }
+  .work-overlay { position: absolute; bottom: 0; left: 0; right: 0; padding: 20px; z-index: 1; }
+  .work-title { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 15px; margin-bottom: 4px; }
+  .work-sub { font-size: 12px; color: var(--muted); }
+
+  #reviews { background: var(--dark); }
+  .reviews-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
+  .review-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 28px; transition: all 0.3s; }
+  .review-card:hover { border-color: rgba(93,202,165,0.25); }
+  .review-header { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+  .review-avatar { width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, var(--teal), var(--teal)); display: flex; align-items: center; justify-content: center; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 16px; color: #fff; flex-shrink: 0; }
+  .review-name { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 15px; }
+  .review-date { font-size: 12px; color: var(--muted); }
+  .review-stars { color: var(--orange); font-size: 14px; margin-bottom: 14px; letter-spacing: 2px; }
+  .review-text { font-size: 14px; color: var(--muted); line-height: 1.7; font-style: italic; }
+  .review-service { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 11px; color: var(--teal); letter-spacing: 1px; text-transform: uppercase; font-family: 'Montserrat', sans-serif; font-weight: 600; }
+
+  #order { background: var(--dark2); }
+  .order-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+  .order-info h2 { margin-bottom: 16px; }
+  .order-info p { color: var(--muted); line-height: 1.7; margin-bottom: 32px; }
+  .contact-items { display: flex; flex-direction: column; gap: 16px; }
+  .contact-item { display: flex; align-items: center; gap: 14px; padding: 16px; background: rgba(43,191,176,0.06); border: 1px solid var(--border); border-radius: 12px; text-decoration: none; color: var(--text); transition: all 0.2s; }
+  .contact-item:hover { border-color: var(--teal); background: rgba(43,191,176,0.1); }
+  .contact-icon { font-size: 20px; }
+  .contact-label { font-size: 12px; color: var(--muted); }
+  .contact-val { font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 14px; }
+  .order-form { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 36px; }
+  .form-title { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 20px; margin-bottom: 28px; }
+  .form-group { margin-bottom: 16px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  label { display: block; font-size: 12px; color: var(--muted); letter-spacing: 0.5px; margin-bottom: 8px; text-transform: uppercase; font-family: 'Montserrat', sans-serif; font-weight: 600; }
+  input, select, textarea { width: 100%; background: rgba(10,31,31,0.6); border: 1px solid var(--border); border-radius: 10px; color: var(--text); font-family: 'Noto Sans', sans-serif; font-size: 14px; padding: 12px 16px; outline: none; transition: border 0.2s; -webkit-appearance: none; }
+  input:focus, select:focus, textarea:focus { border-color: var(--teal); }
+  select option { background: var(--dark2); }
+  textarea { resize: vertical; min-height: 90px; }
+  .form-submit { width: 100%; margin-top: 8px; background: linear-gradient(135deg, #2BBFB0, #168F82); color: #fff; padding: 16px; border-radius: 10px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 15px; border: none; cursor: pointer; box-shadow: 0 8px 32px rgba(43,191,176,0.4), 0 0 60px rgba(43,191,176,0.1); transition: all 0.25s; letter-spacing: 1px; text-transform: uppercase; }
+  .form-submit:hover { transform: translateY(-2px); box-shadow: 0 12px 48px rgba(43,191,176,0.6), 0 0 80px rgba(43,191,176,0.2); }
+
+  @keyframes sloganFade {
+    0% { opacity: 0; transform: translateY(10px); }
+    15% { opacity: 1; transform: translateY(0); }
+    85% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-10px); }
+  }
+  #heroSlogan { display: inline-block; animation: sloganFade 3s ease infinite; }
+  .form-note { font-size: 11px; color: var(--muted); text-align: center; margin-top: 12px; }
+  .success-msg { display: none; text-align: center; padding: 20px; background: rgba(43,191,176,0.1); border: 1px solid rgba(43,191,176,0.3); border-radius: 12px; margin-top: 16px; }
+  .success-msg.show { display: block; }
+  .success-msg h3 { font-family: 'Montserrat', sans-serif; color: var(--teal); margin-bottom: 8px; }
+
+  footer { background: #060f0f; border-top: 1px solid var(--border); padding: 40px; text-align: center; color: var(--muted); font-size: 13px; }
+  .footer-logo { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 18px; background: linear-gradient(90deg, var(--teal), var(--orange)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 12px; }
+  footer p { line-height: 1.8; }
+
+  .whatsapp-float { position: fixed; bottom: 88px; right: 16px; z-index: 99; width: 50px; height: 50px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 32px rgba(37,211,102,0.4); cursor: pointer; transition: all 0.2s; text-decoration: none; font-size: 24px; }
+  .whatsapp-float:hover { transform: scale(1.1); }
+  .toast { position:fixed; bottom:90px; left:50%; transform:translateX(-50%) translateY(20px); z-index:400; background:var(--teal); color:#0D1B1E; padding:12px 20px; border-radius:12px; font-weight:700; font-size:13px; opacity:0; transition:all .35s; font-family:'Montserrat',sans-serif; white-space:nowrap; box-shadow:0 8px 24px rgba(43,191,176,0.4); pointer-events:none; }
+  .toast.show { opacity:1; transform:translateX(-50%) translateY(0); }
+
+  .search-bar-header {
+    flex: 1; max-width: 320px; position: relative; margin: 0 16px;
+  }
+  .search-bar-header input {
+    width: 100%; background: rgba(43,191,176,0.08); border: 1px solid var(--border);
+    border-radius: 10px; padding: 8px 36px 8px 14px;
+    color: var(--text); font-size: 13px; font-family: 'Manrope', sans-serif;
+    outline: none; transition: all 0.2s;
+  }
+  .search-bar-header input::placeholder { color: var(--muted); }
+  .search-bar-header input:focus { border-color: var(--teal); background: rgba(43,191,176,0.12); }
+  .search-bar-header .search-icon {
+    position: absolute; right: 11px; top: 50%; transform: translateY(-50%);
+    color: var(--muted); font-size: 15px; pointer-events: none;
+  }
+  .search-bar-header .search-clear {
+    position: absolute; right: 11px; top: 50%; transform: translateY(-50%);
+    color: var(--muted); font-size: 16px; cursor: pointer; display: none;
+    background: none; border: none; padding: 0; line-height: 1;
+  }
+  .search-bar-header input:not(:placeholder-shown) ~ .search-icon { display: none; }
+  .search-bar-header input:not(:placeholder-shown) ~ .search-clear { display: block; }
+  @media (max-width: 768px) {
+    .search-bar-header { display: none; }
+    header { padding: 0 16px; height: 60px; }
+    nav a:not(.btn-call) { display: none; }
+    /* Hero отступ = шапка 60px + поиск 52px = 112px */
+    .hero { padding: 30px 18px 40px; min-height: auto; }
+    .hero-stats { gap: 14px; margin-top: 24px; }
+    .hero-progress { margin-top: 16px; padding-top: 16px; }
+    .hero-actions { margin-top: 18px; gap: 10px; }
+    /* Кнопки */
+    .hero-actions { margin-top: 24px; gap: 12px; }
+    .btn-primary, .btn-secondary { padding: 14px 20px; font-size: 13px; width: 100%; justify-content: center; }
+
+    /* Статистика — карточками */
+    .hero-stats {
+      margin-top: 28px !important;
+      padding-top: 0 !important;
+      border-top: none !important;
+      display: grid !important;
+      grid-template-columns: repeat(3,1fr);
+      gap: 10px;
+    }
+    .hero-stats > div {
+      background: rgba(43,191,176,0.08);
+      border: 1px solid rgba(43,191,176,0.15);
+      border-radius: 12px;
+      padding: 12px 8px;
+      text-align: center;
+    }
+    .stat-num { font-size: 22px !important; }
+    .stat-label { font-size: 10px !important; }
+
+    /* Слайды */
+    .hero-slide { min-height: 140px; }
+    .slide-num { font-size: 48px !important; margin-bottom: 4px; }
+    .slide-title { font-size: 22px !important; margin-bottom: 8px; }
+    .slide-sub { font-size: 13px !important; margin-bottom: 12px; }
+    .slide-tag { font-size: 9px !important; margin-bottom: 6px; }
+    .hero-progress { margin-top: 14px !important; padding-top: 14px !important; }
+    section { padding: 40px 16px; }
+    /* Каждая секция — отдельный блок с отступом */
+    section:not(.hero) {
+      margin: 0 8px;
+      border-radius: 20px 20px 0 0;
+    }
+    #services { border-radius: 20px; margin: 8px; }
+    #catalog { border-radius: 20px; margin: 8px; }
+    #works { border-radius: 20px; margin: 8px; }
+    #reviews { border-radius: 20px; margin: 8px; }
+    #order { border-radius: 20px; margin: 8px 8px 80px; }
+    .order-layout { grid-template-columns: 1fr; gap: 32px; }
+    .form-row { grid-template-columns: 1fr; }
+    .catalog-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  }
+
+  /* ══ МАРКЕТПЛЕЙС БЛОК ══ */
+  .mkt-top { display: none; flex-direction: column; gap: 0; background: var(--dark2); }
+  @media (max-width: 768px) { .mkt-top { display: flex; } }
+
+  /* Поиск */
+  .mkt-search-wrap {
+    display: flex; align-items: center; gap: 0; margin: 10px 12px 8px;
+    background: var(--dark3); border: 1.5px solid var(--teal); border-radius: 12px;
+    overflow: hidden; position: relative;
+  }
+  .mkt-search-cat {
+    display: flex; align-items: center; gap: 4px; padding: 0 10px;
+    font-size: 11px; font-weight: 700; color: var(--teal);
+    font-family: 'Montserrat', sans-serif; cursor: pointer; white-space: nowrap;
+    border-right: 1px solid var(--border); height: 44px; flex-shrink: 0;
+  }
+  .mkt-search-input {
+    flex: 1; background: transparent; border: none; outline: none;
+    color: var(--text); font-size: 14px; font-family: 'Manrope', sans-serif;
+    padding: 0 12px; height: 44px;
+  }
+  .mkt-search-input::placeholder { color: var(--muted); }
+  .mkt-search-btn {
+    width: 44px; height: 44px; background: var(--teal); border: none; cursor: pointer;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    color: #0D1B1E; transition: background .2s;
+  }
+  .mkt-search-btn:hover { background: var(--teal-light); }
+  .cat-drop {
+    display: none; position: absolute; top: 48px; left: 0;
+    background: var(--dark2); border: 1px solid var(--border); border-radius: 10px;
+    overflow: hidden; z-index: 50; min-width: 160px; box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  }
+  .cat-drop.open { display: block; }
+  .cat-drop div { padding: 11px 16px; font-size: 13px; cursor: pointer; transition: background .15s; }
+  .cat-drop div:hover { background: rgba(43,191,176,0.1); color: var(--teal); }
+
+  /* Быстрые категории */
+  .mkt-cats {
+    display: flex; gap: 8px; padding: 8px 12px; overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .mkt-cats::-webkit-scrollbar { display: none; }
+  .mkt-cat-item {
+    display: flex; flex-direction: column; align-items: center; gap: 5px;
+    text-decoration: none; flex-shrink: 0; color: var(--text);
+  }
+  .mkt-cat-icon {
+    width: 52px; height: 52px; border-radius: 14px;
+    display: flex; align-items: center; justify-content: center; font-size: 22px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+  .mkt-cat-item span {
+    font-size: 10px; font-weight: 600; font-family: 'Montserrat', sans-serif;
+    color: var(--muted); text-align: center; white-space: nowrap;
+  }
+
+  /* Баннер */
+  .mkt-banner {
+    margin: 4px 12px 10px; border-radius: 16px;
+    background: linear-gradient(135deg, #0D3B36 0%, #0F4F48 50%, #113D3A 100%);
+    border: 1px solid rgba(43,191,176,0.3);
+    padding: 18px 20px; display: flex; align-items: center;
+    justify-content: space-between; cursor: pointer; overflow: hidden;
+    position: relative;
+  }
+  .mkt-banner::before {
+    content: ''; position: absolute; top: -30px; right: 60px;
+    width: 120px; height: 120px; border-radius: 50%;
+    background: rgba(43,191,176,0.08);
+  }
+  .mkt-banner-tag {
+    font-size: 10px; font-weight: 700; letter-spacing: 2px;
+    color: var(--teal); text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif; margin-bottom: 6px;
+  }
+  .mkt-banner-title {
+    font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 800;
+    color: #fff; line-height: 1.2; margin-bottom: 4px;
+  }
+  .mkt-banner-sub { font-size: 11px; color: rgba(255,255,255,0.6); }
+  .mkt-banner-num {
+    font-family: 'Montserrat', sans-serif; font-size: 42px; font-weight: 900;
+    background: linear-gradient(135deg, #2BBFB0, #F5A623);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    letter-spacing: -2px; flex-shrink: 0;
+  }
+
+  /* Светлая тема для маркетплейс блока */
+  body.light-mode .mkt-top { background: #fff; }
+  body.light-mode .mkt-search-wrap { background: #F4F7F6; border-color: #2BBFB0; }
+  body.light-mode .mkt-search-input { color: #0D1B1E; }
+  body.light-mode .cat-drop { background: #fff; }
+  body.light-mode .mkt-cat-item span { color: #5A8078; }
+  body.light-mode .mkt-banner { background: linear-gradient(135deg,#E8F8F6,#D4F0EC); border-color: rgba(43,191,176,0.4); }
+  body.light-mode .mkt-banner-title { color: #0D1B1E; }
+
+  /* ПРОФИЛЬ БОТТОМШИТ */
+  .profile-overlay {
+    display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5);
+    z-index: 300; backdrop-filter: blur(4px);
+  }
+  .profile-overlay.open { display: block; }
+  .profile-sheet {
+    position: fixed; bottom: -100%; left: 0; right: 0; z-index: 301;
+    background: var(--dark2); border-radius: 24px 24px 0 0;
+    border-top: 1px solid var(--border); transition: bottom .4s cubic-bezier(0.4,0,0.2,1);
+    padding-bottom: calc(20px + env(safe-area-inset-bottom));
+  }
+  .profile-sheet.open { bottom: 0; }
+  .profile-sheet-inner { padding: 0 24px 24px; text-align: center; }
+  .profile-sheet-handle {
+    width: 40px; height: 4px; background: var(--border);
+    border-radius: 2px; margin: 12px auto 20px;
+  }
+  .profile-avatar {
+    width: 72px; height: 72px; border-radius: 50%;
+    background: rgba(43,191,176,0.12); border: 2px solid var(--teal);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 32px; margin: 0 auto 12px;
+  }
+  .profile-name { font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 800; margin-bottom: 4px; }
+  .profile-sub { font-size: 13px; color: var(--muted); margin-bottom: 24px; }
+  .profile-btn-main {
+    display: block; width: 100%; padding: 14px;
+    background: linear-gradient(135deg,#2BBFB0,#168F82); color: #fff;
+    border-radius: 12px; font-family: 'Montserrat', sans-serif; font-weight: 700;
+    font-size: 14px; text-decoration: none; margin-bottom: 10px;
+    box-shadow: 0 6px 20px rgba(43,191,176,0.35);
+  }
+  .profile-btn-wa {
+    display: block; width: 100%; padding: 13px;
+    background: rgba(37,211,102,0.12); border: 1px solid rgba(37,211,102,0.3);
+    color: #25D366; border-radius: 12px; font-family: 'Montserrat', sans-serif;
+    font-weight: 600; font-size: 14px; text-decoration: none; margin-bottom: 16px;
+  }
+  .profile-links { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+  .profile-links a {
+    padding: 12px 16px; background: var(--dark3); border-radius: 10px;
+    color: var(--text); text-decoration: none; font-size: 14px;
+    border: 1px solid var(--border); text-align: left;
+  }
+  .profile-close {
+    width: 100%; padding: 12px; background: transparent;
+    border: 1px solid var(--border); border-radius: 10px;
+    color: var(--muted); font-size: 14px; cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+  }
+  body.light-mode .profile-sheet { background: #fff; }
+  body.light-mode .profile-links a { background: #F4F7F6; }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="#" class="logo">
+    <div class="logo-icon">
+      <svg viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" width="44" height="44">
+        <circle cx="22" cy="22" r="21" fill="#11282B" stroke="url(#ringG)" stroke-width="1.5"/>
+        <defs>
+          <linearGradient id="ringG" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#2BBFB0"/>
+            <stop offset="100%" stop-color="#FFB84D"/>
+          </linearGradient>
+          <linearGradient id="leafG" x1="0" y1="1" x2="1" y2="0">
+            <stop offset="0%" stop-color="#1A8C85"/>
+            <stop offset="100%" stop-color="#2BBFB0"/>
+          </linearGradient>
+          <linearGradient id="boltG" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#FFB84D"/>
+            <stop offset="100%" stop-color="#D4881C"/>
+          </linearGradient>
+        </defs>
+        <path d="M20 8 C18 11,14 16,14 21 C14 26,17 29,20 31 C20 28,19.5 24,20.5 20 C21.5 16,23 13,24 11 C22.5 9.5,21 8.2,20 8Z" fill="url(#leafG)"/>
+        <path d="M23 10 L19 20 L22 20 L18 34 L30 21 L26 21 L30 10Z" fill="url(#boltG)"/>
+      </svg>
+    </div>
+    <div class="logo-text">
+      <span class="logo-name">KAFOLAT SERVICE</span>
+      <span class="logo-sub">
+        <span class="phone-icon">📞</span>
+        <span class="hotline-num">11 44</span>
+        <span class="hotline-label">— горячая линия</span>
+      </span>
+    </div>
+  </a>
+  <nav>
+    <a href="#services">Услуги</a>
+    <a href="#catalog">Магазин</a>
+    <a href="#works">Работы</a>
+    <a href="#reviews">Отзывы</a>
+  </nav>
+  <div class="search-bar-header">
+    <input type="text" id="headerSearch" placeholder="🔍 Найти товар..." oninput="searchProducts(this.value)" onkeydown="if(event.key==='Enter')searchProducts(this.value)"/>
+    <span class="search-icon">🔍</span>
+    <button class="search-clear" onclick="document.getElementById('headerSearch').value='';searchProducts('')">×</button>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;">
+    <button class="theme-toggle" id="themeToggleBtn" title="Сменить тему">
+      <div class="theme-toggle-ball" id="themeIcon">🌙</div>
+    </button>
+    <a href="#order" class="btn-call">Вызвать мастера</a>
+  </div>
+</header>
+
+<!-- МОБИЛЬНЫЙ МАРКЕТПЛЕЙС БЛОК -->
+<div class="mkt-top" id="mktTop">
+
+  <!-- Поиск -->
+  <div class="mkt-search-wrap">
+    <div class="mkt-search-cat" onclick="toggleCatDrop()">
+      <span id="catLabel">Везде</span>
+      <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 3L5 7L8 3" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+    </div>
+    <input class="mkt-search-input" type="text" placeholder="Искать товары..." id="mktSearch" oninput="searchProducts(this.value)"/>
+    <button class="mkt-search-btn" onclick="searchProducts(document.getElementById('mktSearch').value)">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </button>
+    <!-- Дропдаун категорий -->
+    <div class="cat-drop" id="catDrop">
+      <div onclick="selectCat('Везде','all',this)">Везде</div>
+      <div onclick="selectCat('Сантехника','plumbing',this)">🚿 Сантехника</div>
+      <div onclick="selectCat('Электрика','electric',this)">⚡ Электрика</div>
+      <div onclick="selectCat('Отопление','heating',this)">🔥 Отопление</div>
+    </div>
+  </div>
+
+  <!-- Быстрые категории -->
+  <div class="mkt-cats">
+    <a class="mkt-cat-item" href="#catalog" onclick="filterCatQuick('all')">
+      <div class="mkt-cat-icon" style="background:linear-gradient(135deg,#2BBFB0,#168F82)">🔥</div>
+      <span>Акции</span>
+    </a>
+    <a class="mkt-cat-item" href="#catalog" onclick="filterCatQuick('plumbing')">
+      <div class="mkt-cat-icon" style="background:linear-gradient(135deg,#3C89E8,#1A5FBE)">🚿</div>
+      <span>Сантехника</span>
+    </a>
+    <a class="mkt-cat-item" href="#catalog" onclick="filterCatQuick('electric')">
+      <div class="mkt-cat-icon" style="background:linear-gradient(135deg,#F5A623,#D4881C)">⚡</div>
+      <span>Электрика</span>
+    </a>
+    <a class="mkt-cat-item" href="#catalog" onclick="filterCatQuick('heating')">
+      <div class="mkt-cat-icon" style="background:linear-gradient(135deg,#E74C3C,#C0392B)">🔥</div>
+      <span>Отопление</span>
+    </a>
+    <a class="mkt-cat-item" href="#order">
+      <div class="mkt-cat-icon" style="background:linear-gradient(135deg,#27AE60,#1E8449)">🔧</div>
+      <span>Мастер</span>
+    </a>
+    <a class="mkt-cat-item" href="#services">
+      <div class="mkt-cat-icon" style="background:linear-gradient(135deg,#8E44AD,#6C3483)">📋</div>
+      <span>Услуги</span>
+    </a>
+  </div>
+
+  <!-- Баннер -->
+  <div class="mkt-banner" onclick="window.location.href='#order'">
+    <div class="mkt-banner-text">
+      <div class="mkt-banner-tag">Горячая линия</div>
+      <div class="mkt-banner-title">Вызов мастера<br>за 15 минут</div>
+      <div class="mkt-banner-sub">Бесплатный выезд · Гарантия</div>
+    </div>
+    <div class="mkt-banner-num">1144</div>
+  </div>
+
+</div>
+
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+
+    <!-- Slides -->
+    <div class="hero-slide active" id="slide-0">
+      <div class="slide-tag">Горячая линия</div>
+      <div class="slide-num">1144</div>
+      <div class="slide-title">Сервис сантехники и электрики<br><span>нового уровня</span></div>
+      <div class="slide-sub">Работаем по всему Таджикистану. Быстро, качественно, с гарантией.</div>
+    </div>
+
+    <div class="hero-slide" id="slide-1">
+      <div class="slide-tag">Наш подход</div>
+      <div class="slide-title">Решаем проблемы быстро<br><span>и без лишних затрат</span></div>
+      <div class="slide-sub">Мастер приедет в течение часа. Диагностика бесплатно. Оплата только за результат.</div>
+    </div>
+
+    <div class="hero-slide" id="slide-2">
+      <div class="slide-tag">Полный цикл</div>
+      <div class="slide-title">Берём на себя<br><span>весь процесс</span></div>
+      <div class="slide-sub">От диагностики до подбора материалов — вам не нужно ни о чём думать.</div>
+    </div>
+
+    <div class="hero-slide" id="slide-3">
+      <div class="slide-tag">Наше отличие</div>
+      <div class="slide-title">Сервис и магазин<br><span>в одной системе</span></div>
+      <div class="slide-sub">Без посредников и задержек. Купили материал — тут же установили.</div>
+    </div>
+
+    <div class="hero-slide" id="slide-4">
+      <div class="slide-tag">Контроль качества</div>
+      <div class="slide-title">Контролируем качество<br><span>на каждом этапе</span></div>
+      <div class="slide-sub">От детали до результата. Каждая работа проходит проверку.</div>
+    </div>
+
+    <div class="hero-slide" id="slide-5">
+      <div class="slide-tag">Надолго</div>
+      <div class="slide-title">Делаем один раз<br><span>и правильно</span></div>
+      <div class="slide-sub">Чтобы вы не возвращались к проблеме. Гарантия на все виды работ.</div>
+    </div>
+
+    <div class="hero-slide" id="slide-6">
+      <div class="slide-tag">Горячая линия</div>
+      <div class="slide-num">1144</div>
+      <div class="slide-title"><span>Быстро. Надёжно.</span><br>Продумано.</div>
+      <div class="slide-sub">Один звонок — и мастер уже в пути.</div>
+    </div>
+
+    <!-- Progress dots -->
+    <div class="hero-progress">
+      <div class="progress-dot active" onclick="goSlide(0)"></div>
+      <div class="progress-dot" onclick="goSlide(1)"></div>
+      <div class="progress-dot" onclick="goSlide(2)"></div>
+      <div class="progress-dot" onclick="goSlide(3)"></div>
+      <div class="progress-dot" onclick="goSlide(4)"></div>
+      <div class="progress-dot" onclick="goSlide(5)"></div>
+      <div class="progress-dot" onclick="goSlide(6)"></div>
+    </div>
+
+    <!-- Кнопки ВСЕГДА видны -->
+    <div class="hero-actions" style="margin-top:32px;">
+      <a href="#order" class="btn-primary">⚡ Вызвать мастера</a>
+      <a href="#catalog" class="btn-secondary">🛒 Наш магазин</a>
+    </div>
+
+    <!-- Место для баннеров в будущем -->
+    <div id="hero-banner" style="margin-top:24px;display:none;"></div>
+
+    <!-- Статистика -->
+    <div class="hero-stats">
+      <div><div class="stat-num">1144+</div><div class="stat-label">Выполненных работ</div></div>
+      <div><div class="stat-num">7 лет</div><div class="stat-label">Опыт работы</div></div>
+      <div><div class="stat-num">24/7</div><div class="stat-label">Аварийный выезд</div></div>
+    </div>
+
+  </div>
+</section>
+
+<section id="services">
+  <div class="section-header">
+    <div class="section-tag">Наши услуги</div>
+    <h2 class="section-title">Что мы делаем</h2>
+    <p class="section-desc">Профессиональные мастера с опытом работы более 5 лет. Гарантия качества на все виды работ.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card sc-teal">
+      <div class="service-accent"></div>
+      <div class="service-icon">🚿</div>
+      <span class="service-tag">Сантехника</span>
+      <h3>Сантехника</h3>
+      <p>Монтаж, ремонт и замена всех видов сантехнического оборудования</p>
+      <ul class="service-list">
+        <li>Установка унитазов и раковин</li>
+        <li>Замена труб и запорной арматуры</li>
+        <li>Прочистка засоров</li>
+        <li>Установка бойлеров и водонагревателей</li>
+        <li>Монтаж тёплого пола (водяного)</li>
+        <li>Устранение утечек и прорывов</li>
+      </ul>
+      <div class="service-price">от 50 сомони · Выезд бесплатно</div>
+    </div>
+    <div class="service-card sc-orange">
+      <div class="service-accent"></div>
+      <div class="service-icon">⚡</div>
+      <span class="service-tag">Электрика</span>
+      <h3>Электрика</h3>
+      <p>Монтаж и ремонт электрических систем любой сложности</p>
+      <ul class="service-list">
+        <li>Замена проводки квартиры/дома</li>
+        <li>Установка розеток и выключателей</li>
+        <li>Монтаж щитков и автоматов</li>
+        <li>Подключение бытовой техники</li>
+        <li>Освещение и люстры</li>
+        <li>Поиск и устранение неисправностей</li>
+      </ul>
+      <div class="service-price">от 40 сомони · Срочный выезд</div>
+    </div>
+    <div class="service-card sc-blue">
+      <div class="service-accent"></div>
+      <div class="service-icon">🏗️</div>
+      <span class="service-tag">Под ключ</span>
+      <h3>Под ключ</h3>
+      <p>Полный комплекс работ при ремонте и строительстве</p>
+      <ul class="service-list">
+        <li>Проектирование систем</li>
+        <li>Разводка по всему объекту</li>
+        <li>Поставка материалов из нашего магазина</li>
+        <li>Гарантия 1 год на все работы</li>
+        <li>Сдача объекта с документами</li>
+        <li>Бесплатный выезд на осмотр</li>
+      </ul>
+      <div class="service-price">Расчёт после осмотра · Бесплатно</div>
+    </div>
+  </div>
+</section>
+
+<section id="catalog">
+  <div class="section-header">
+    <div class="section-tag">Наш магазин</div>
+    <h2 class="section-title">Каталог товаров</h2>
+    <p class="section-desc">Продаём качественные сантехнические и электрические материалы. Только проверенные бренды.</p>
+  </div>
+  <div class="catalog-filters">
+    <button class="filter-btn active" onclick="filterProducts('all',this)">Все товары</button>
+    <button class="filter-btn" onclick="filterProducts('plumbing',this)">Сантехника</button>
+    <button class="filter-btn" onclick="filterProducts('electric',this)">Электрика</button>
+    <button class="filter-btn" onclick="filterProducts('heating',this)">Отопление</button>
+  </div>
+  <div class="catalog-grid" id="productsGrid">
+    <div class="product-card" data-id="1" data-cat="plumbing">
+      <div class="product-img"><img src="data:image/jpeg;base64,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" alt="Смеситель GROHE Eurosmart" style="width:100%;height:100%;object-fit:contain;padding:8px;background:#fff;"><span class="product-badge">Хит</span></div>
+      <div class="product-info">
+        <div class="product-cat">Сантехника</div>
+        <div class="product-name">Смеситель GROHE Eurosmart</div>
+        <div class="product-desc">Однорычажный для раковины, хром</div>
+        <div class="product-footer"><div class="product-price">320 сом.</div><button class="btn-cart" onclick="addToCart('Смеситель GROHE Eurosmart')" data-stop="true">+</button></div>
+      </div>
+    </div>
+    <div class="product-card" data-id="2" data-cat="electric">
+      <div class="product-img"><img src="data:image/jpeg;base64,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" alt="Выключатель Legrand" style="width:100%;height:100%;object-fit:contain;padding:8px;background:#fff;"></div>
+      <div class="product-info">
+        <div class="product-cat">Электрика</div>
+        <div class="product-name">Выключатель Legrand</div>
+        <div class="product-desc">Белый, скрытой установки</div>
+        <div class="product-footer"><div class="product-price">22 сом.</div><button class="btn-cart" onclick="addToCart('Выключатель Legrand')" data-stop="true">+</button></div>
+      </div>
+    </div>
+    <div class="product-card" data-id="3" data-cat="plumbing">
+      <div class="product-img"><img src="data:image/jpeg;base64,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" alt="Унитаз подвесной" style="width:100%;height:100%;object-fit:contain;padding:8px;background:#fff;"><span class="product-badge">Акция</span></div>
+      <div class="product-info">
+        <div class="product-cat">Сантехника</div>
+        <div class="product-name">Унитаз подвесной</div>
+        <div class="product-desc">Белый, компактный</div>
+        <div class="product-footer"><div class="product-price">580 сом.</div><button class="btn-cart" onclick="addToCart('Унитаз подвесной')" data-stop="true">+</button></div>
+      </div>
+    </div>
+    <div class="product-card" data-id="4" data-cat="plumbing">
+      <div class="product-img"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA0JCgsKCA0LCgsODg0PEyAVExISEyccHhcgLikxMC4pLSwzOko+MzZGNywtQFdBRkxOUlNSMj5aYVpQYEpRUk//2wBDAQ4ODhMREyYVFSZPNS01T09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0//wAARCADIAMgDASIAAhEBAxEB/8QAGwABAQADAQEBAAAAAAAAAAAAAAMBAgQFBgf/xAA4EAADAAECBAIHBwMDBQAAAAAAAQIDBBEFEiExQVETMlJhcYGRBiIzQqGx0RQVYpLB4SNUcnOC/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AP04AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbSW77E3mx+2vkBQEnqMfvfyNXqZ8JYFwcz1L8JX1NXnt+S+QHWDjeXI/zM1dU+9N/MDtbS7sw8kL8y+pxADrebGvzfoavUR4Js5gBd6nyj9TD1F+CSIgC8ah/nXzReamlvL3OEJtdU9mB3g5o1DXS1v7y83Nr7r3A2AAAAAAAAOfU6zHpskRk35sifL8joPC+0+0TpMtb7Tkae3k1/wBtxjiK/tuacf3aaST3955fD+MNbY9R9SmsWHPwzJWBptJNdfJngAfb48kZJ5oe6Nz5DR8QzaWls3UeR9HouIYtVCapb+QHaAAAAAyAAAAAAGQMAAAFunugAKxna9br7y83N+qzjC6dgO4HPjzNPa+q8zo3AAAAeN9qZ5uFJ+zkl/ueyeb9oI5+Daj/FKvo0B8VN3G/JTW/kRdVHrLefNFWum5qwMJprdPdG2PJeK1WOnLXkSrG0+aHs/LwYm93tS5a8vMD6Lh3GVW2PP0fn5ntxc3O8vdHwp3aLiWbTNJt1P7AfXA8/TcUwZkt3szunJN+rSA3BgAZBgyAAAAyYAAAAADMxVdkBg6sW/JsyUwp79WVxdWwKAAAc3EcfpeH6iPax1+x0mKSqWn2a2A/Ncy3w9Dmw6rZ8uX/V/J3ZsbisuN95pr6M8jItqaA9MxUqltSGJ82KH5pGzQEvvx33qf1RvLVdUZNXCb3T2fmgOiDrw6jLj9W2edOTJHrRzrzXRlo1eHtdcj/zWwHs4uJZp9bZnXj4mn60njY6m1vFKl7nuWkD2p12Ku/QrOpw1+f9DxZKyB7CyY32yI2VR7cnlSVkD0Oj7Un8DKXx+hHR/iV8Dryfh18AJJx7RsuTzIIouwFeaV2RnmbOTJrdLhe2TUY0/Z5t39EazrMmXppdNkv/ACv7k/yB27pLdvZLuzbTWsiqp9Xwfmcc6bJlarV5Ve3X0cdJX8nfhW0vYCgAAAAD4bi+L0XF9TG3R1zL59T5/VTy5WfW/afFycTx5fDJC3+K6fwfL8QhqtwK6KubTr/FtFzi4e2nUPx6o7QDSfuMdmZHxAzJRRNLZpM0leRWQNP6DT29+TlfnPRlZ0NT+FrNRHu5t1+pSS8gRnTa5epxCX/54kUnHxVds+kr4w1/uXktIHPK4sv+yf8AqRSf7v7Oi+tHTJSQI4XxmW3NaFeHq0/9yzXF7lq9bpoT78mH+WVRSQOWdFqa/F4ln/8AiZn9kUnhemfXLWbN/wCzI2dKN5A1wabT4F/0cGOPgjpTJo3TXbxA2L41tJPFPM932RYAAAAAA8H7V4ubS4cyXqXyv5r/AIPlNTj9Ik/cfdcbw+n4TnlLdzPOvl1Pi31xJ+TA86YeLLL8mdpi8ao2AwYMgAu5eGRRSAOidi0kJLwBWWVlonJWQKTS8yk3PmaSVkDZWik15Jv5GEUQGU69n6s3XN5pGEboDKnzbZRdOxqikLmpIC+NbQjYAAAAAAA1uVcVFdqWzPgrxPHly4a7y3P0Pvz4/j2H0HGLrbacqVfXo/1QHleANrW1tGoGAZMAEVgkisAWgvBCS8AWkrJKSsgVktPYlJWQKSUknJSQN0bo0RRAbI6ME9ObzISt2kvE60klsvADIAAAAAAAB4H2pwb4MOoS9SnL+D7fse+cvE9P/VcPzYturnefiuqA+JyrflrzJlZXPha8UTA1BnYwAKSaG8AXktBGS0AWktJGS0gVkrJKSsgUkojSTdAbopJpJWJdUkvEC2nn8z+RcwkkkkZAAAAAAAAAAADy9XwXBqM3pcb9FVetsuj9+3mePxPgmXSS8uBvLi7106z8vI+sMAfnpg+o4rwKM3Nm0aUZO7jwr4eTPmrisduLlzUvZprqgNDeDU2juBeC8EYLQBaSskoLSBWSskpLSBvJRGkm8gbydmCOWeZ92RwY+euvZdzrAyAAAAAAAAAAAAAAAAcPEuGYNfH3ly5Uvu2u/wA/NHcAPhNZo82izejzzs/BrtS9xKO591qdNh1WF4s8Kpfn4fA+Y4hwbPo6eTFvlw+aXWfj/IHHBaSMF4AtJWSUFpArJaSUlUBui2KHdKV4k8UVdbSt2elhxLFO3j4sDaJUSpRsAAAAAAAAAAAAAAAAAAAAAAAcWo4XpNQ3Tx8lP80dDivgTX4Wf5VJ7QA8P+0aie1Y382bzwzUeLhfM9kAedHDaXr5F8kXjRYp9bmr4s6gBrMzK2lJL3GwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB//9k=" alt="Унитаз Cersanit Nano" style="width:100%;height:100%;object-fit:contain;padding:8px;background:#fff;"></div>
+      <div class="product-info">
+        <div class="product-cat">Сантехника</div>
+        <div class="product-name">Унитаз Cersanit Nano</div>
+        <div class="product-desc">Компактный, с бачком, белый</div>
+        <div class="product-footer"><div class="product-price">480 сом.</div><button class="btn-cart" onclick="addToCart('Унитаз Cersanit Nano')" data-stop="true">+</button></div>
+      </div>
+    </div>
+    <div class="product-card" data-id="5" data-cat="electric">
+      <div class="product-img"><img src="data:image/jpeg;base64,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" alt="LED лампа Philips 12W E27" style="width:100%;height:100%;object-fit:contain;padding:8px;background:#fff;"></div>
+      <div class="product-info">
+        <div class="product-cat">Электрика</div>
+        <div class="product-name">LED лампа Philips 12W E27</div>
+        <div class="product-desc">Тёплый белый 3000K, 1000 лм</div>
+        <div class="product-footer"><div class="product-price">18 сом.</div><button class="btn-cart" onclick="addToCart('LED лампа Philips 12W E27')" data-stop="true">+</button></div>
+      </div>
+    </div>
+    <div class="product-card" data-id="6" data-cat="heating">
+      <div class="product-img"><img src="data:image/jpeg;base64,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" alt="Радиатор алюминиевый 8 секц." style="width:100%;height:100%;object-fit:contain;padding:8px;background:#fff;"></div>
+      <div class="product-info">
+        <div class="product-cat">Отопление</div>
+        <div class="product-name">Радиатор алюминиевый 8 секц.</div>
+        <div class="product-desc">Высота 500мм, 136 Вт/секция</div>
+        <div class="product-footer"><div class="product-price">210 сом.</div><button class="btn-cart" onclick="addToCart('Радиатор алюминиевый 8 секц.')" data-stop="true">+</button></div>
+      </div>
+    </div>
+    <div class="product-card" data-id="7" data-cat="electric">
+      <div class="product-img"><img src="data:image/jpeg;base64,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" alt="Контактор ABB" style="width:100%;height:100%;object-fit:contain;padding:8px;background:#fff;"></div>
+      <div class="product-info">
+        <div class="product-cat">Электрика</div>
+        <div class="product-name">Контактор ABB</div>
+        <div class="product-desc">Промышленный, для щитков</div>
+        <div class="product-footer"><div class="product-price">85 сом.</div><button class="btn-cart" onclick="addToCart('Контактор ABB')" data-stop="true">+</button></div>
+      </div>
+    </div>
+    <div class="product-card" data-id="8" data-cat="electric">
+      <div class="product-img"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA0JCgsKCA0LCgsODg0PEyAVExISEyccHhcgLikxMC4pLSwzOko+MzZGNywtQFdBRkxOUlNSMj5aYVpQYEpRUk//2wBDAQ4ODhMREyYVFSZPNS01T09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0//wAARCADIAMgDASIAAhEBAxEB/8QAGwAAAQUBAQAAAAAAAAAAAAAAAAIDBAUGAQf/xAA/EAABAwIEAwQHBwIEBwAAAAABAAIDBBEFEiExBkFxEyJRYRQjMoGRobEHM0JScsHRFUNTYoLhJGNzg8Lw8f/EABgBAQEBAQEAAAAAAAAAAAAAAAABAgQD/8QAKhEBAAIBAgMHBAMAAAAAAAAAAAECEQMEBTFBEhMUITJRcRUzgbGh0fH/2gAMAwEAAhEDEQA/APTkIQgEIXC9rd3AdSg6hMvq6aP254x1cE42RrgC1wIOxBQKQkSyCKMvdew8FW1ONw08pYIy82vcOFkFqhUUfEIknEfYAAi982qt45u0hbIGOs7lbUe5TIeQolSahxPYObq3RpOUg+Koq7+r01PJNUSSCOMXcWvvp42CZGoXC4NFybDxKyWDY/SZGGfEmDe7HOJJ/haCGtpaxhDKhj2u/C7+UyHpa6lhdllma0+BTTMVopJOzbMCehsmZ8KpprOlEzMu2V9xZUldhOJ0lT6RhcMNbCRbsnS5HedydCPgg1rXBzQ5pBB2IXVlqfFcficxlRgUjI9G+rLXNaPHfZXVBikNWzveqkBsWPuD81RPQhFxz0QCEIQCEIQCEIQCjPmLZXNINhzUlQs2aplaW7Ea+5SQ+2YFpJ2HNQK3DHVbGhlTYN1GZt/mpZaDHZDr5mgaDdQZHHaWpwqLtTFJNCBd8jG6M15hdoeMcJp269qHOsCZNj7hsteyVxLvAaaqPVS0z80ctC+ccx2QIKoVQ1cFbG40pc21ibi4F07JTQusZaaN5/MGjRV0FN2UrpKbDJGF2vemyj4KbmxJ20dNH1cXIKPEuG6iSt9KwfEhTS3OaORuZrdPw21CRDh3FVNOx762mqYx7Vrh9vK6vX09dJq+riYfFkVyPiUl1LIGnPiU58bWCBWHTzzwMFbTSMl5lzdAVKc5kZJMwaPBzhZQvRKIgGSWWT9UrigQ4azUUzD1bf6pkQ6qj4dmmc+spKB0rzcva0EuPnbVR2UGCQOb/TmTQPz5wIGOIJ2vYq4FRBH93C0dGgJMtcQy7WgWKZBFVzNblbS1cvm9rWpTpK2W1qJjfN8u3wSHVkp2sFGqMTZBb0iqiizbZ3ht0yJYZiR3kpmDloXH4rghqy49tXhrv+XGBp1Kj9s57Q4SZgdQQbgpBce13/CpkSzTR/3a2pf/ANy30XGwUDHB2Vz3A3Bc4n91WYniMOGUbqme5ANmtG7j4BUVDxeZqtsdTSMjieQA5jiS3rfdBuPS2E2AKkqpYe8OqthsrAEIQqBCEIBRAB20h55v2UtQxIz0iWPMM4OYtvqB4qSHLaIO4SZMxtbbmug3aD4hRRbfzTYL2EAONr7FOHdJKBs1EmovaxsmJ6wQxOlnmbHG3dzjYBddo93Urz/jLEJJsZNIT6qmAAadi4i5PzsiNtTYnSVrnNpayOVzdw12o9yfcbg9F5lhcj4sQhfEcsjXAggr0rNcX8QgIz6tvRUGP8RnD5/RKNjHzgAyOfqGX2FuZV5G71bei84x2OVnEFZ2w0MpcL8wdrINRgPEU1dUimrWRh7r5JGCwJ8CFoJT6srEcK00steJbdyPUnwW0lPq3IO1Ewgp5ZnaiNheR42F15hNVS1tQ+pqHZ3vN3En5dF6bI1ssT43i7HtLXDyIssYOE6tkxYx8ZjB7rybXHmguOEJJPQZInEljXXYPDxCvifWj9Kh4bRR4fSthYcx/E625Ugu9aOhQZrjsSmOhLQTGHPv4A2FvldUGGUr6usZGwHUi1l6DUQw1MRiqI2yMO4KRTUtLS39HhYwkWLgNT70E2Luta2+wAV0NgqJrtVet9kdFYHUIQqBCEIBUoY+PHKh1rtksT5gCyulElDWS5jluTpffzspISQ/smAb21XXn1QPO2nVJnl7IsJNm80qN4miDwNCdFFR8RJAjykh1zax8kplQxkDHSu1c/I3S5JvoFzET6tnmT9FEqGuNNBI06RTkknkDpf5oJMukj+qyXEfDstbX+m0uUue0CRh8RzHuWpkJaSHXvpe/RMOeiM5g3DjqWoE9Y5py6taNTfzWkzJsvSc+qBUbvVhM1FJS1L2vnhY9zdASNURv7nvK72nmgXEyOFmSGNrG+DRZEjvVu6JrtEiSX1buiKkh2gRmTLBI8DIxztOTSnW0lW/aFw66IDOkF/rG68ipLMKqne0WN6m6cGCyFwc6YacgEELtAjtFaMwmnH3jpCfM2UhmG0jf7IPXVEUbZRdadvsjokMgij9iNjegS1YHULl11UCEIQCi1VM17xOXOzRtIaOWqlJE/3L/wBJQRKiHtWgXsOa7SsMcAYeRP1XKiXs2MJAIJsdbWCchcHxhwIPmOayqNiI9WzqfoUqlAdA4Os4FxBG4KK8XjZve5At0KKMWicLW750QQ657Y5i0WAsLD3KGHPee41zugurz1bZCXxtufxEXT1g4d15HTZBQtpat+0D/eLJQw+c+2+JnV6vBCSQ52jhzDiuiJoHey38Q0BEU0eEStZd0gcL37gunosLjeBYyX55xYfJWUgha0GVwsOZNlCqcZwulb3q2BpHIPBPySZiObdaWt6YycbhcDW+y0u+P1SvRWts3sbDxZYKsn4yweK4bM+U/wCSMn6qun49pxfsKKV/m9wb/K851aR1dVOH7q/Kk/r9tZHEWj2vgLJYNiA62uxXn8/HVe/SCmgj8LkuKjHHOJK5w7MzWvp2UNvnZZ8RXo6I4PuMZvMV+Zel3A5piaupYBeaoiZ+p4C86/pnE1b986osf8WbKPhdORcHVrzeeqgYfK7yp3t55Va+n7en3NaPx5thPxRg0Nw6ujcfBl3fRVsvG+Gx5uxinlF9LNDfqq+Hgymbbt6yV/kxob/KmwcMYTE8h0D5LWPfkP7JnWn2hOzw2nW1v4/pDn4+k/sULR5vk/hQXcW47VG1NGxv/TiLj+61UOGYfBbsqKnbbnkBPzUttmizRYeA0Tsak87HjNnT0aOfmf8AWRw6TiiqxGmfUGr7AStL81mDLfXTRegqvj1e3qrBeunTsxzy491ue/mJisVx7BCEL0coSJReJ48ilrj9WEeSCI9jZImh7cwFja67AzJEBYN1JsOXklM9mx3GhSllUatBMbA32s4t8Cik0Y8E3Ieb9U9IwPy3/C64TVOCDKD/AIh/ZAirnEBiGXMZX5dTYAbk/BM1FYyCmnkp5I3yMgMrWF24tcGycxGAzQsLQSY3ZrDcjYqqZAIMdjblu18YYS4e00g30+HwSVrMRMTJmnxqrqqdsstfTwF8WfIwC7TfQa3Oo12VVib8fqa+WPD5q2amv3HNu0HTxsFr4o44mjs42M0/C0BLvc6leU6c2jEy7tPe00rzalI/Lz8YBi9QR6RIxubbtZ7/AMqXBwg98ZkkrowBuGMJ262WleHMDb9nG65tm3t/7dTH27F1hoRfRSNCnV624xuZ8q4j4hnIuE8PZMGzzVEhdtqG30v4KZT4Dhcb3x+hNLw24MhLunNWhsZoyQbhvdI+aGuPauOTW25PL/6txp0jo5b77c39V5MUtNAxj2Mp4oixwF2MA8E9G97oGF++bb3obmyva4tFjYmyMxMTMxuQQL9FqIc02m3nMnkJJK5dELSAfWu6BczJIJMrrA7BUO3RdcDJDs0pxtNKdxYICI+sb1VkoEEDTLYSsc5upaHXIU9WECEIVAuO9k9F1B2QRYbuYXEWzG/RLVa6R8eJQnUsMQA8B3tf2VksgKTsh5sW25myCimpJGteGWcXEX7ovYeJXRG10rXuY0uaDlcuMF5pT5gfJOs0uEEW+gSboIfsGldbDK7ZqCPLE02LGDNffdIDJBdz3XAG11NNM5ovI9rR5myIYqadz2R1EcjmjvBjgbXQRWlznNJHdbsfcutDzcuNyQRoPNSqFjHh8UjbSwuyvHLyI8is1inGtNh1ZNSegu7aFxa4G51+SIu205MRjIc4EAG6XLC9kJeQQ1pzH4rDVX2hYg9rjS07IwBubf7rUcEY1Ni+FufWSZ5g45r8vLpa3xQW/o4EZlfI1sYF8xOllEmxHCacXlrWG35dVKpGs7OqoJe9HG4tAP5HC4/deNYnRupMRqqV5LjBKWAuN9AfNB6RNxjgcUrYoS6eRzg1oBAuVf1DmsgjroB3WgF7fFh394XhswIYC06t8F69w9iLMR4dikDswkYQ7rbvD43QI42xDEMMwuKtw6QCMPDZB5HY/H6rzqp4ixercRLWPAP5f91vcbnbU8ET59f+GDhfxBFl5hc9FYGu+zrEpBidRDO9z3us7MdyL2I+hXp7HB17LxPhySKmx+nqJpnRNbe5BsD5O8v9l69g9VHW05ngkbJETYOabgp1FghCFQIQg7IIbI2vETzfMzUEGyeSI9G28CQlrKkkag+CTIQB3vcfBLUetnFNTOmcwvDNwN7IOsuJNfxNB94Trd02+zmhwJtoQRv1CiYpHLLhUzYpSZN8ze6UFhTOuHA8jovP+MMdxnDMalpI6i0LgHxHX2T0tsbhbDDal/odMKm4nkab6bkb/wArHfaS0PqaCYAZix7D7iCPqiMpNi2I1Lj21XJ/p0Wj+zbEHx4lUU0r3OLwH3cbnexH0WTynmVZ8MujpuIYJ3zOjADr2OjvI+X8BUeqySiLGYnjaeJzXdW6j6rz/wC0SFjeII6hv9+AE+ZBI+llcYhxHQitpZRMD2JeTY33Fll+JsXZi9ZC+IHJFGW3OlyTdIFKALWAOvitZ9nc01PVVcRDewsHZs2oda1reFvosonaeqnpnOdTyujLhYkcwg9S/qEceK1LnSNymKP46rzjiKaOpx+umjOZrpTY+4KFJPPKSZJnuJ3u5N3HimAK+o+KKmjw6OkiiF425c17X8FQX8ASugOOzVRY1WNVtTSeiueGw2DS0cwqwh2bcBtvenWwSu2B9wU2DBa6e2SnkIPMiwUFaxuQEF+bW+q232fcQxUUxwuqc4R1EgMLraNedweunvULD+DK6rlDHOiiv+Y3+i1WC8DU2H1sVXUz9u+I5mNDbNDuR9yo1yEIQCDshcdsbIKmur4YKp1IS8SyszNI2uOV+gTuH1Yq4ZH/AIWvLQbW081CxqgM9bFUsJAYAX2OwBSuHHZqGU2I9ad+iyq0jJLASiRgexzHC4IsUoaCyEDMMIigjhBJDG5brkY7/mCQfNcdUwsqRC99pcua1tLeJS4/bP6ygi1k7aajlkcQDew6ry3iTFqivqQJIxlhJDQ03vc7rWcYT4hFh881G4ExuJIIvYeQXnseeSlifmzZs2vv2+ZVhCbydprlyW5HmlG3NLZTyyGzWuJ8gpkOCVsouKd9vEiyCvzBGbwBWgi4XqS3M9zG+V7lTYOGGggyvBHMBMjJgPOwS2QSvNgCegW8hwSgi2pw4+LjdS208UWQRxsbr+EWTIwUeEVb7eoeAdrhT6XhqplPftGBzcFtciUGIM3BwtA23azOd5NFlPp8EoIyfUB1jpmN1bhiTE27SfElQRY8PpWaCFnwUtrQAABsnA3wCejppX+zG74IJOEMvM5xFsrVbqHh9O+EPMgsTsFMVgCEIVAg7ISX7IIFTJmqvRsv3sRAd4JFDE2kbO3JkjDrg+OmpSp7DFqfzYR8ipEzM8L2fmFvisqaE4npGTQlzQ8tIvodTzTsbi4G41ChUcT4aUsfe7HNbrfkfpZSWPbHHJJI4BrRdx5ABERHkHGzpvSnX3qZD/5KBX1k0JgmhgM1O4XeWmzm352O/RWEfdc4eDkVUVcImbKw7PzD4qlbw9SRtAIL7C19lePEpN82/gEgxk6kkoiFHTxxACNjW28AlPbZjj5KSWWXJI3GM2adbIpprLABKDU6Wtb7cjG9SkPmgY0m732/K231RHMq4W+tZ0K6akfghH+o3TE1cInjtKiOIkWAuGoJgieRfKbeJ0XD2bSQ6VgI5A3PyUU5n6ucXeZN1xjO+/3IJJmhGwe89LBJZMWtAbE0W5nVZzH8XkpJxR0xyuyh0jxuL7AJXDlfPUVLoZJHyMLS67jcgjzQbHCnvkqbPIIDSbWsrlVODj1zz4NVsrAEIQqBCEIBJeNEpCCtxBswqKSSEXyy9/TUt2/dSylviD3tdmcC2+x0KbBIJa7cc1kJn+6PUfUJiSIzU9TCDq9hF/ipRAIsdQUlrMpNjoUVTvL/AEeF4cQ8X1B2Omifp8QYbip7jwPaA0d/BTmIAFzNORVZUmOGCSaVwbHG0uc48gERIdVQADvFx/yhNOrG/ghv5uKykPErpZb+jNbH+UuOa3XZaKMtkjbIzVrgCECxVzvzWyssbd1qi11dHSwiWsmcATZoOpJ8AFIjbo79RWQ4odM/Fsj7iONoEY5ajUoNBQ4jTVknZxhzH7gOG6mSN9WVmOGaaSWuEneDITc+Gy1kg7nvCBitl9Fop6i1zGwuA8TyWCFRM+Z0kri97zdxdzK9FkibLG+ORt2vBDh4hVEPDNJHOHukkkYDcRkC3vQSsFbIMLi7XfW3S+imsGr/ANSkRU0rgBHEbDQWGifgwyoNy+zLuJ1QZHGsBqKuvNTTFju0ADmuNrEaKywXChhsJzvzyu3PIeQWnjwpg+8eT0UmOip49owT56q4EXCG6yHorJca0NFmgAeS6qBCEIBCEIBCEIBcc0OBBXUIKyrbVU8FS/te6ReK27CigqZpmFtSwB7QDnb7Lh+x8lZEBws4AjzUTEYC+ilbEy5czLYDdTAj13ts6FZXjCnnmw6LsiezbJeRo2Oml/etII3x01OyQvLms1zm53XBG5+gaT7lFeaYZhs9ZUtZHGS0Hvk7Bb2KERRMjbsxoaFZR0EpFmsawfBPMwwbvk+CqKWMd0/qKbqcOp66wngEhGg3utJDh9PELZMxve5UlsbGCzWgdAmBnqXC3xxiOnpxGwbDZSxhEjrZ3tAuCbK4QmBCjwyBvtZndVIZTwx+xG0e5OoVBa2yEIQCEIQCEIQCEIQCEIQCEIQCEIQCEIQIMTHPzOaCbW1SwANhZCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEH/9k=" alt="Автомат ABB 4-полюсный" style="width:100%;height:100%;object-fit:contain;padding:8px;background:#fff;"><span class="product-badge">Хит</span></div>
+      <div class="product-info">
+        <div class="product-cat">Электрика</div>
+        <div class="product-name">Автомат ABB 4-полюсный</div>
+        <div class="product-desc">S204 D50, автоматический выключатель</div>
+        <div class="product-footer"><div class="product-price">120 сом.</div><button class="btn-cart" onclick="addToCart('Автомат ABB 4-полюсный')" data-stop="true">+</button></div>
+      </div>
+    </div>
+    <div class="product-card" data-id="9" data-cat="heating">
+      <div class="product-img"><img src="data:image/jpeg;base64,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" alt="Водонагреватель ARISTON 50L" style="width:100%;height:100%;object-fit:contain;padding:8px;background:#fff;"><span class="product-badge">Хит</span></div>
+      <div class="product-info">
+        <div class="product-cat">Отопление</div>
+        <div class="product-name">Водонагреватель ARISTON 50L</div>
+        <div class="product-desc">Накопительный, 1500 Вт</div>
+        <div class="product-footer"><div class="product-price">890 сом.</div><button class="btn-cart" onclick="addToCart('Водонагреватель ARISTON 50L')" data-stop="true">+</button></div>
+      </div>
+    </div>
+    <div class="product-card" data-id="10" data-cat="plumbing">
+      <div class="product-img"><img src="data:image/jpeg;base64,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" alt="Шаровой кран нерж. 2"" style="width:100%;height:100%;object-fit:contain;padding:8px;background:#fff;"></div>
+      <div class="product-info">
+        <div class="product-cat">Сантехника</div>
+        <div class="product-name">Шаровой кран нерж. 2"</div>
+        <div class="product-desc">Для воды, нержавеющий шар</div>
+        <div class="product-footer"><div class="product-price">95 сом.</div><button class="btn-cart" onclick="addToCart('Шаровой кран нерж. 2"')" data-stop="true">+</button></div>
+      </div>
+    </div>
+    <div class="product-card" data-id="11" data-cat="electric">
+      <div class="product-img"><img src="data:image/jpeg;base64,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" alt="Автомат Schneider C16" style="width:100%;height:100%;object-fit:contain;padding:8px;background:#fff;"></div>
+      <div class="product-info">
+        <div class="product-cat">Электрика</div>
+        <div class="product-name">Автомат Schneider C16</div>
+        <div class="product-desc">RCBO, защита от токов утечки</div>
+        <div class="product-footer"><div class="product-price">55 сом.</div><button class="btn-cart" onclick="addToCart('Автомат Schneider C16')" data-stop="true">+</button></div>
+      </div>
+    </div>
+    <div class="product-card" data-id="12" data-cat="heating">
+      <div class="product-img"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA0JCgsKCA0LCgsODg0PEyAVExISEyccHhcgLikxMC4pLSwzOko+MzZGNywtQFdBRkxOUlNSMj5aYVpQYEpRUk//2wBDAQ4ODhMREyYVFSZPNS01T09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0//wAARCADIAMgDASIAAhEBAxEB/8QAGwABAAIDAQEAAAAAAAAAAAAAAAUGAwQHAQL/xABAEAABAwIEAgYGBgoCAwAAAAABAAIDBBEFEiExQVEGEyJhcYEUMnKRobEjJGLB0eEHFSUzNEJDUmOSU3OCovD/xAAZAQEAAwEBAAAAAAAAAAAAAAAAAgMEAQX/xAAmEQEAAgICAgECBwAAAAAAAAAAAQIDESExBBJBEzIUIiMzQ3GB/9oADAMBAAIRAxEAPwDpyIiAiIgIiICIiAiIgIiXQES6XQEREBERAREQEREBERAREQEREBERAREQEREBERBzrH+kOI0+KTxRPOVjyBYuHyuFEnpXifEl3iXfgrx0kwDDZ6SasNLGJwcxfbV2ttVzHEIIopHMjjaC022VcxMPQxWraqWHS3EB/TYfHP8AgvpvS7EeDIwfB/4qsW+y3/ULYp4w6QNdl/1CjuVmoWWPpTib3C8zR5H73LpGFTPnwynlkN3vYCTzVe6L9HsNkwuKqnpopXvuRmaLAA2VqjjZFGI4mNYxuga0WAVlYljz3rbiH0iIpM4iIgIiICIiAiIgIiICIiAiIgIiICIiCL6QOcKFjQdHyAO7wuSYk90mIz3t652XZsQpWVVK5jhqO008iuR4xRiHEZHMJs/tWPAlV3bfF1MaRFtVmh0mHivDGbrIxpEgPeoba/R0ToHVTvFZTPfeKLK5g5Xvf5K3qq9BYoW01VK03le5ubuAGnxurUrq9PMzffIiIuqhERAREQEREBERAREQEREBERAREQEXy97WC73Bo5lYzUwj+oEdiJnpmXMel1P1GJuFrDW3v/NX+oxalhuM+Z3JuvyVMxuUYhXdYIXSOOwOg926rvMabfEx3i+9KgUO+xU9JAIrg9S08g26xxi5s7qfNhVW4el9O88xD76PYxJQVDS09xB2cOS6XQVsNdTiaF3i3i08lz6CgZO2/VQn2QQVv0M78JnEjJcjdnNfs4eKsrbTH5Hj+/Xa9oo2nxygnsGy2J7rj3hSDHteLscCO5W7ebalq9w+kREREREBERAREQEREBERAWtLX0sUpifKM7d2jUhbKqWMtDsQm5h2/kgnJsZpIWOe4SkNF+yy68psdw6qIbFUDMTbKdDfwVQnqqiEHI8OHJwuomsxOma5hrcPaSCCHMNiO9BfcT6+oqWGK3Utbrc2Oa6rmJ1lRhkTpqinfMLE3aCWjXQdy06XppEJgwmV8ev7xtz5G/zW27pfSn+k8/8Aj+art3y9DBua/lhC4Zik+NySNdI6FjAXuGbQDTlvupmkhjcMsTcrOJPrO8VEVWI4PNK6eOkkhmIsXRANv4i9lM4fIHQNfH2mkXB4+5QbK7ivPbFV4ebks2Ue6me11g03ViknjjjLpCAFW8Qx3KXClAb/AJDv5KM1hdjzWiOUhSiWks+aRkLftutfyW1Lj+HZcshbLzs0lUOoxB0jyS5z3c3FZWUmKT0Dq+Gme+maSC9tja25tvbvsp1pLJl8rFM88/0sNRJg9Q4up5ZKV52IF2+7815BW47h7ojhVRFVQg3eGuu53iDr7lW5Y6yChp6yWzY6kuEV93AWu63LWy+Ya97HAm4PMFd9ZhX+IxXj1nh3WJxfG1xFiQDZfS5p0f6WT0jmsmd1sB3BO34LolHVw1lO2eneHMd8O4qcW2xZcM4+e4Z0RFJSIiICIiAiIgIiICquLD9pz+I+QVqVXxjTE5vL5BBV8Yq2QTRxulYy5F7utfuVeqpRVsrKlpBaZQxvgBa63uk2Zj39axpjlLnNJGvZIaoKh/h6hrfVBaQPeg+Kc/Tt8VvXUfAfp2eK31Tk7en4c/py9ceyfBS1ListKxsZiZI0AWvcWUOdj4LO4+r7I+Sg2RzLexLF5KqMZgI2tFiATqoCWZ0rtdBwCyzl0soiZbT5rGyMtlH7t2WzrO1a7XZW0r8y83ys/tPpXphzDmPepbB6uCGNzqqtdAKYmWAQn6ZzyLZW8A06E35d5WR+MuyveyioGCXskBubKO1tytm+AX1JjNQ2QtYzDWh7TmtCLXJJ43sbuuLbWU2Jq4tXfrMwVb53PqXMLJostmx2OmS2gaRw4EFaLWSO0EbzpfRp25+Clv19XzPfG6qggaWFheyLhcbcRsPjzWV2M1rngjFonF12kMpzx3NiLHYdyCFY98MmxBG4OiuXRDHzRVTWSOJp5TZ4/t71V/Raexc+qlceTYDf4pARBVmNpdlJ7JcLHxso2j5hpwZP47dS7sCCAQbgr1QvROu9OwSIuN3xfRu8tvgppSidwovWa2msiIi6iIiICIiAiIgKsY0P2nL4N+Ss6reND9oyeDfkgpfSiF1TSOb/ADQOu3vY4fc4H3qu4fCWUdQ538zgB5D81a6mEeiOqXAuf6TNHM29zkuANOFhYqE9HdT0AbIACSXaHgdt+6yCDh/iG+0t9aEf8QPaW8qcnb0vC+yQ7FZ3mzWn/GD8FrlZai/o4/6R8lGGqZ1uWjEC+YXaHk37JO6zBl5Gh0MURabkPOp05LBFl60Bwbl45jYLIHxxgPZFG5p0yyOzHz200+KveHM7DIMvViGJ2Ztg6xzcgfFS9Ng1MyklfWTObOGgxMabNcb6tvve3yUVTysdXQvEbIxnFw3ZWFwE7RG+wuRYngeBXJlKIQ1fhrooXTU7nOyi5jcb3HcVHwyuY5ssTi08DyVombkjeZOzlBzA8LbqpU37ruvokEpGlkbK53pFQYwBcAWFz7lhLvpLtcXBuxPJWnCuj1K7AxXvoanEXvjDgyCUsNyfVAG9he/gq3WwxwV88MLi6OOQtaSCDoe/3eS65HEuifo8mJNXDwIa8K7Kifo8afSql3ARAfFXtcp0v8r9yRERSZxERAREQEREBV7GR9fd7IVhUFjA+uH2AggJo2Nc+zW9vV2m/ioDExo7mVYqoaqv4mPWQVKMfWR7X3rdWlH/ABI9pb1lTk7el4X2y8WxK3NG1vExAfBYCFsnaP2G/JQa9bnSLiA61uYXF9luXyA5Ym8W6NvxG91ikjEdU03s1zrgr7lczqx2m7nQHUajfuWiJ28W9ZraayxVZzSZiPMaX1utmPFXNjDZonvI0zRi91qzOY5zyHMvYajj4LALc00jE6b+KYpU4o4tbCaeN9s9zdzz3DvWOnpTO0U8DAHNN3SG9u5t7WHErXAeDoHAuHAbhZo21bWlsTahrSbkNDgCjiXw6DFKWCSOCWNjHm7g8PPDgALfmot1OY6swOOZzXWJsR89V5HUzxgtzE6/za28L7LdwikkqqpoY275HWaPFcmdQtw097xDonQKlMeHTVBFutfYeAVqWth1IyhoIaZm0bbE8zxWyuxGocy397zYREXVYiIgIiICIiAofF43dcJMpyloF1MLxzQ4EOAIPAoKTWC9+5V/EtnLoVbgkM4Jhd1Tjw3CpXSHDpcOLRUvib1l8hLwM1t7XQUWIfWW+0t+ywQ05bO0ufGADckvGik6Wl9Lm6mmmilk/tY4Eqq8cvS8O1YpO5aZGi2mxPeG5Wk2aPkpcdEsXLSfRHgAXNy0feomuMtLI1mZzHxC1wbWKh6y0/Vr8SxVFM50dni3I8lGvjcxxa4WIUwMamnYGVoEwGgfazx58V4YYKpt4yHDlsQpRPqoy4q5uY4lqMrauT1IYn23+hDv/tltwyVL2NDnzB9tRHTs7B1576W96wCmqIMwgkLQ7cbLC6Kqc8ucXlx3N91ZFolht4+Svw33NrCx5ikrzIRb1WtbYeC05n18Ja6WokB4fSXNkEFU5uQveG8i82W9Q4RPVzBjGSTyHgLlPaCvj3nvhG01M6Z13Xy31PNdM6G4CaSIV1SzLI4fRMI9Uc/FZMA6JxUZZUV4bJKNWxjVrfHmrQkRvmUr3rSvpT/ZERFJnEREBERAREQEREBERAXKOltM2qxWuFQXyOikNruNwOHlYrq65t0riy9Iq9o2exrv/UfggoXosX9g8ypro/BCx7X9U2/XMF7X4hRhHaPipnARsP8APH80ddhqJ4qeIvmdZu3iuR9JnR/rOQN4m4C6pisbpKTstLrOBIHJcXxY3xepvckSO1JvxULNPj8RtrixcLc1v4aGie7thuo9h181twH6OTwKg0w6fBgeA4tSMqKQ9kgXdBJx5EagFfB6FUF7iont4N/BaH6MwfQa11jlMjbG2h0V2VkREsdsuSlpiLIGn6JYXCQXNklPJzrD4WUzT00FKzJTxMjbyaLLKi7ERCq17W7kREXURERAREQEREBERAREQEREBR2J4LQ4k7rKiO0oFhIw2dbl3+akV4NdUFMd+jygdJmFZUBt9g1qmsG6L4bg7+sp2Pkm/wCSU3I8BsFNIgjqrFoadzmlrrt56fNclx5kT8SmnjblD3E+a7DWti6omWNjwdLOAKpGIYPQTSuJgZcng2yhZoxWrEKACAd1vYdldLlcRlOhCsP6hoA79yzzv+K2qbBqBjgfRotPsKOl0XhbaDGaPqIomN6trWgANFwPIKZBJAI2K0MNipRC0wQRxkAXytAW/dWQyX1vg1XqLw811B6iA3CICIiAiIgIiICIiAiIgIiIBUZJO+JxLXW7lJFatRTNkudj8FyUq6+WqMVc02fDmHNrvuWQYtT/AMwe3xH4LTmoJBchpPslaUkMrD2g5vtBc2n6xKVq6ylngysqYswN7E2Vfma50hyuB14Ffb2uOvZPkvgxudfstRKI02oo7NYXROztbYdjTx71gZERodPEqyxj65HcAFsWUDzVafE8Odbsana34JLlZ2mMMmhpo39dPGL2sM11snGKHPkbMHuG4aLqt9S47yO83lZ4qdx0YzMfsi5TZNdpqTGIw7LHGS77RAXpqXyOAzdnuWnDh1Q/Usy97tFJ01C2HV7szvgnKM6hts9QeC9RFJWIiICIiAiIgIiICIiAiIgJZEQeZRyXmQIiD4dTxO9aNh8WhfHoVKd6eP8A1REd2zdWzOH5RmAsCsRo6Ym5gjJPNqIjj6bTws9WGMeDQsoAGyIgIiICIiAiIgIiICIiD//Z" alt="Насос Grundfos UPS 25-40" style="width:100%;height:100%;object-fit:contain;padding:8px;background:#fff;"></div>
+      <div class="product-info">
+        <div class="product-cat">Отопление</div>
+        <div class="product-name">Насос Grundfos UPS 25-40</div>
+        <div class="product-desc">Циркуляционный, для отопления</div>
+        <div class="product-footer"><div class="product-price">420 сом.</div><button class="btn-cart" onclick="addToCart('Насос Grundfos UPS 25-40')" data-stop="true">+</button></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="works">
+  <div class="section-header">
+    <div class="section-tag">Портфолио</div>
+    <h2 class="section-title">Наши работы</h2>
+    <p class="section-desc">Примеры выполненных проектов — от аварийного ремонта до монтажа под ключ.</p>
+  </div>
+  <div class="works-grid">
+    <div class="work-card"><div class="work-img">🛁<div class="work-overlay"><div class="work-title">Ремонт ванной комнаты</div><div class="work-sub">ул. Исмоили Сомони · 2024</div></div></div></div>
+    <div class="work-card"><div class="work-img">⚡<div class="work-overlay"><div class="work-title">Замена проводки</div><div class="work-sub">Микрорайон Зарнисор · 2024</div></div></div></div>
+    <div class="work-card"><div class="work-img">🚿<div class="work-overlay"><div class="work-title">Монтаж душевой кабины</div><div class="work-sub">ул. Бохтар · 2024</div></div></div></div>
+    <div class="work-card"><div class="work-img">💡<div class="work-overlay"><div class="work-title">Электрощит под ключ</div><div class="work-sub">Офисное здание · 2023</div></div></div></div>
+    <div class="work-card"><div class="work-img">🔥<div class="work-overlay"><div class="work-title">Отопление частного дома</div><div class="work-sub">Гипрозем · 2023</div></div></div></div>
+    <div class="work-card"><div class="work-img">🏠<div class="work-overlay"><div class="work-title">Разводка под ключ</div><div class="work-sub">Новостройка 3 комн · 2024</div></div></div></div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="section-header">
+    <div class="section-tag">Отзывы клиентов</div>
+    <h2 class="section-title">Нам доверяют</h2>
+    <p class="section-desc">Реальные отзывы наших клиентов по всему Таджикистану</p>
+  </div>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="review-header"><div class="review-avatar">АР</div><div><div class="review-name">Алишер Рахимов</div><div class="review-date">Февраль 2025</div></div></div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">«Вызвал мастера вечером — приехали через 40 минут. Устранили прорыв трубы быстро и аккуратно. Цена оказалась ниже, чем ожидал. Рекомендую!»</p>
+      <div class="review-service">🔧 Аварийная сантехника</div>
+    </div>
+    <div class="review-card">
+      <div class="review-header"><div class="review-avatar" style="background:linear-gradient(135deg,var(--orange-dark),var(--orange))">МТ</div><div><div class="review-name">Мадина Тошматова</div><div class="review-date">Январь 2025</div></div></div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">«Заменили всю проводку в квартире. Работали 2 дня, всё аккуратно, без лишнего мусора. Дали гарантию 1 год. Теперь не боюсь за электрику!»</p>
+      <div class="review-service">⚡ Замена проводки</div>
+    </div>
+    <div class="review-card">
+      <div class="review-header"><div class="review-avatar" style="background:linear-gradient(135deg,#0F6E56,var(--teal))">ФД</div><div><div class="review-name">Фаррух Джалолов</div><div class="review-date">Март 2025</div></div></div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">«Заказал монтаж отопления под ключ. Ребята сами привезли все трубы и радиаторы из своего магазина. Сэкономил время и нервы. Отличная работа!»</p>
+      <div class="review-service">🔥 Система отопления</div>
+    </div>
+  </div>
+</section>
+
+<section id="order">
+  <div class="order-layout">
+    <div class="order-info">
+      <div class="section-tag">Связаться с нами</div>
+      <h2 class="section-title">Вызвать мастера<br>или задать вопрос</h2>
+      <p>Оставьте заявку и мы перезвоним в течение 15 минут. Выезд на объект — бесплатно!</p>
+      <div class="contact-items">
+        <a href="tel:+992900001144" class="contact-item">
+          <span class="contact-icon">📞</span>
+          <div><div class="contact-label">Телефон (24/7)</div><div class="contact-val">+992 90 000-11-44</div></div>
+        </a>
+        <a href="https://wa.me/992900001144" class="contact-item">
+          <span class="contact-icon">💬</span>
+          <div><div class="contact-label">WhatsApp</div><div class="contact-val">Написать сейчас</div></div>
+        </a>
+        <a href="#" class="contact-item">
+          <span class="contact-icon">📍</span>
+          <div><div class="contact-label">Офис и магазин</div><div class="contact-val">Таджикистан, Душанбе</div></div>
+        </a>
+      </div>
+    </div>
+    <div class="order-form">
+      <div class="form-title">Заявка на услугу</div>
+      <div class="form-row">
+        <div class="form-group"><label>Ваше имя</label><input type="text" placeholder="Алишер" id="fname"></div>
+        <div class="form-group"><label>Телефон</label><input type="tel" placeholder="+992 __ ___-__-__" id="fphone"></div>
+      </div>
+      <div class="form-group">
+        <label>Вид услуги</label>
+        <select id="fservice">
+          <option value="">Выберите услугу</option>
+          <option>Сантехника — аварийный вызов</option>
+          <option>Сантехника — плановый ремонт</option>
+          <option>Электрика — аварийный вызов</option>
+          <option>Электрика — монтаж/замена</option>
+          <option>Отопление</option>
+          <option>Консультация</option>
+          <option>Покупка товара в магазине</option>
+        </select>
+      </div>
+      <div class="form-group"><label>Адрес</label><input type="text" placeholder="Улица, дом, квартира" id="faddress"></div>
+      <div class="form-group"><label>Описание проблемы</label><textarea placeholder="Опишите кратко что случилось или что нужно сделать..." id="fdesc"></textarea></div>
+      <button class="form-submit" onclick="submitForm()">⚡ Отправить заявку</button>
+      <p class="form-note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных</p>
+      <div class="success-msg" id="successMsg">
+        <h3>✅ Заявка принята!</h3>
+        <p style="color:var(--muted);font-size:14px">Мы перезвоним вам в течение 15 минут</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">КАФОЛАТ СЕРВИС · 1144</div>
+  <p>Профессиональная сантехника и электрика в Таджикистане<br>Работаем 24/7 · Гарантия на все виды работ</p>
+  <p style="margin-top:16px;font-size:12px">© 2025 Кафолат Сервис. Все права защищены.</p>
+</footer>
+
+<a href="https://wa.me/992900001144" class="whatsapp-float" title="WhatsApp">💬</a>
+
+<script>
+let currentSlide = 0;
+const totalSlides = 7;
+let sliderTimer;
+
+function goSlide(n) {
+  document.getElementById('slide-' + currentSlide).classList.remove('active');
+  const oldDot = document.querySelectorAll('.progress-dot')[currentSlide];
+  oldDot.classList.remove('active');
+  currentSlide = n;
+  document.getElementById('slide-' + currentSlide).classList.add('active');
+  const newDot = document.querySelectorAll('.progress-dot')[currentSlide];
+  newDot.classList.remove('active');
+  void newDot.offsetWidth;
+  newDot.classList.add('active');
+  clearInterval(sliderTimer);
+  sliderTimer = setInterval(nextSlide, 2000);
+}
+
+function nextSlide() {
+  goSlide((currentSlide + 1) % totalSlides);
+}
+
+sliderTimer = setInterval(nextSlide, 2000);
+
+function toggleTheme() {
+  const body = document.body;
+  const ball = document.getElementById('themeIcon');
+  if (!body.classList.contains('light-mode') && !body.classList.contains('night-mode')) {
+    // Тёмный → Ночной
+    body.classList.add('night-mode');
+    ball.textContent = '🌑';
+    localStorage.setItem('ks_theme', 'night');
+  } else if (body.classList.contains('night-mode')) {
+    // Ночной → Светлый
+    body.classList.remove('night-mode');
+    body.classList.add('light-mode');
+    ball.textContent = '☀️';
+    localStorage.setItem('ks_theme', 'light');
+  } else {
+    // Светлый → Тёмный
+    body.classList.remove('light-mode');
+    ball.textContent = '🌙';
+    localStorage.setItem('ks_theme', 'dark');
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const ball = document.getElementById('themeIcon');
+  const saved = localStorage.getItem('ks_theme');
+  if (saved === 'night') {
+    document.body.classList.add('night-mode');
+    if (ball) ball.textContent = '🌑';
+  } else if (saved === 'light') {
+    document.body.classList.add('light-mode');
+    if (ball) ball.textContent = '☀️';
+  } else {
+    if (ball) ball.textContent = '🌙';
+  }
+
+  var btn = document.getElementById('themeToggleBtn');
+  if (btn) {
+    btn.addEventListener('click', toggleTheme);
+    btn.addEventListener('touchend', function(e) {
+      e.preventDefault();
+      toggleTheme();
+    });
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.product-card').forEach(function(card) {
+    card.addEventListener('click', function(e) {
+      if (e.target.closest('.btn-cart')) return;
+      const id = card.getAttribute('data-id');
+      const name = card.querySelector('.product-name') ? card.querySelector('.product-name').textContent.trim() : '';
+      const price = card.querySelector('.product-price') ? card.querySelector('.product-price').textContent.trim() : '';
+      const desc = card.querySelector('.product-desc') ? card.querySelector('.product-desc').textContent.trim() : '';
+      const cat = card.querySelector('.product-cat') ? card.querySelector('.product-cat').textContent.trim() : '';
+      const img = card.querySelector('img') ? card.querySelector('img').src : '';
+      const badge = card.querySelector('.product-badge') ? card.querySelector('.product-badge').textContent.trim() : '';
+      // Сохраняем все данные товара в localStorage
+      const productData = { id, name, price, desc, cat, badge, img };
+      localStorage.setItem('ks_current_product', JSON.stringify(productData));
+      window.location.href = 'product-card.html';
+    });
+  });
+});
+
+// Корзина
+let cart = JSON.parse(localStorage.getItem('ks_cart') || '[]');
+function updateCartBadge() {
+  const b = document.getElementById('cartBadge');
+  if (!b) return;
+  if (cart.length > 0) { b.style.display = 'flex'; b.textContent = cart.length; }
+  else b.style.display = 'none';
+}
+updateCartBadge();
+
+// Категории поиска
+function toggleCatDrop() {
+  document.getElementById('catDrop').classList.toggle('open');
+}
+function selectCat(label, slug, el) {
+  document.getElementById('catLabel').textContent = label;
+  document.getElementById('catDrop').classList.remove('open');
+  filterCatQuick(slug);
+}
+function filterCatQuick(slug) {
+  const btns = document.querySelectorAll('.filter-btn');
+  btns.forEach(b => b.classList.remove('active'));
+  const target = slug === 'all' ? btns[0] : document.querySelector(`.filter-btn[onclick*="${slug}"]`);
+  if (target) target.classList.add('active');
+  document.querySelectorAll('#productsGrid .product-card').forEach(card => {
+    card.style.display = (slug === 'all' || card.getAttribute('data-cat') === slug) ? 'flex' : 'none';
+  });
+}
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.mkt-search-cat') && !e.target.closest('.cat-drop')) {
+    const d = document.getElementById('catDrop');
+    if (d) d.classList.remove('open');
+  }
+});
+
+// Профиль боттомшит
+function showProfile() {
+  document.getElementById('profileSheet').classList.add('open');
+  document.getElementById('profileOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function hideProfile() {
+  document.getElementById('profileSheet').classList.remove('open');
+  document.getElementById('profileOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function setBnActive(id) {
+  document.querySelectorAll('.bn-item').forEach(i => i.classList.remove('active'));
+  const el = document.getElementById('bn-' + id);
+  if (el) el.classList.add('active');
+}
+
+window.addEventListener('scroll', function() {
+  const map = [
+    {id:'home', el:'home'},
+    {id:'catalog', el:'catalog'},
+    {id:'services', el:'services'},
+    {id:'profile', el:'reviews'},
+  ];
+  let active = 'home';
+  map.forEach(({id, el}) => {
+    const s = document.getElementById(el);
+    if (s && window.scrollY >= s.offsetTop - 200) active = id;
+  });
+  document.querySelectorAll('.bn-item').forEach(i => i.classList.remove('active'));
+  const el = document.getElementById('bn-' + active);
+  if (el) el.classList.add('active');
+});
+
+function filterProducts(cat, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('#productsGrid .product-card').forEach(card => {
+    card.style.display = (cat === 'all' || card.getAttribute('data-cat') === cat) ? 'flex' : 'none';
+  });
+}
+
+function searchProducts(query) {
+  const q = query.toLowerCase().trim();
+  document.querySelectorAll('#productsGrid .product-card').forEach(card => {
+    const name = (card.querySelector('.product-name') ? card.querySelector('.product-name').textContent : '').toLowerCase();
+    const desc = (card.querySelector('.product-desc') ? card.querySelector('.product-desc').textContent : '').toLowerCase();
+    const cat  = (card.querySelector('.product-cat')  ? card.querySelector('.product-cat').textContent  : '').toLowerCase();
+    card.style.display = (!q || name.includes(q) || desc.includes(q) || cat.includes(q)) ? 'flex' : 'none';
+  });
+  if (q) {
+    // Сбрасываем активный фильтр
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    // Скроллим к каталогу
+    document.getElementById('catalog').scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+function addToCart(name) {
+  cart.push({ name, time: Date.now() });
+  localStorage.setItem('ks_cart', JSON.stringify(cart));
+  updateCartBadge();
+  // Показываем уведомление
+  const t = document.getElementById('toast');
+  if (t) { t.textContent = '✓ ' + name + ' добавлен в корзину!'; t.className = 'toast show'; setTimeout(() => t.className = 'toast', 3000); }
+}
+
+function submitForm() {
+  const name = document.getElementById('fname').value.trim();
+  const phone = document.getElementById('fphone').value.trim();
+  if (!name || !phone) { alert('Пожалуйста, заполните имя и телефон'); return; }
+  document.getElementById('successMsg').classList.add('show');
+  document.querySelector('.form-submit').style.display = 'none';
+}
+</script>
+<!-- НИЖНЯЯ НАВИГАЦИЯ — маркетплейс -->
+<nav class="bottom-nav" id="bottomNav">
+  <div class="bottom-nav-inner">
+
+    <a class="bn-item active" href="#home" id="bn-home" onclick="setBnActive('home')">
+      <svg class="bn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+        <polyline points="9 22 9 12 15 12 15 22"/>
+      </svg>
+      <span class="bn-label">Главная</span>
+    </a>
+
+    <a class="bn-item" href="#catalog" id="bn-catalog" onclick="setBnActive('catalog')">
+      <div class="bn-icon-wrap">
+        <svg class="bn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+          <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+        </svg>
+      </div>
+      <span class="bn-label">Каталог</span>
+    </a>
+
+    <a class="bn-center-btn" href="#order" onclick="setBnActive('order')">
+      <div class="bn-center-circle">
+        <div class="bn-icon-wrap" style="position:relative;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
+            <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+          </svg>
+          <span class="bn-badge" id="cartBadge" style="display:none">0</span>
+        </div>
+      </div>
+      <span class="bn-label" style="color:var(--teal);margin-top:2px;">Корзина</span>
+    </a>
+
+    <a class="bn-item" href="#reviews" id="bn-fav" onclick="setBnActive('fav')">
+      <div class="bn-icon-wrap">
+        <svg class="bn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
+      </div>
+      <span class="bn-label">Избранное</span>
+    </a>
+
+    <a class="bn-item" href="#" id="bn-profile" onclick="setBnActive('profile');showProfile()">
+      <div class="bn-icon-wrap">
+        <svg class="bn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+          <circle cx="12" cy="7" r="4"/>
+        </svg>
+      </div>
+      <span class="bn-label">Профиль</span>
+    </a>
+
+  </div>
+</nav>
+
+<!-- ПРОФИЛЬ БОТТОМШИТ -->
+<div class="profile-sheet" id="profileSheet">
+  <div class="profile-sheet-inner">
+    <div class="profile-sheet-handle"></div>
+    <div class="profile-avatar">👤</div>
+    <div class="profile-name">Войдите в аккаунт</div>
+    <div class="profile-sub">Чтобы делать заказы и отслеживать их</div>
+    <a href="tel:1144" class="profile-btn-main">📞 Позвонить 1144</a>
+    <a href="https://wa.me/992900001144" class="profile-btn-wa" target="_blank">💬 WhatsApp</a>
+    <div class="profile-links">
+      <a href="#order">📋 Мои заявки</a>
+      <a href="#catalog">🛒 Перейти в магазин</a>
+    </div>
+    <button class="profile-close" onclick="hideProfile()">Закрыть</button>
+  </div>
+</div>
+<div class="profile-overlay" id="profileOverlay" onclick="hideProfile()"></div>
+
+<div class="toast" id="toast"></div>
+</body>
+</html>
